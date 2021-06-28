@@ -18,10 +18,10 @@
 	let data = [
 		{
 			Age_Group: "19-22",
-			Dive_1: "101A",
-			Dive_2: "103B",
+			Dive_1: "100A",
+			Dive_2: "102B",
 			Dive_3: "204B",
-			Dive_4: "5132D",
+			Dive_4: "5111A",
 			Dive_5: "302C",
 			Dive_6: "402C",
 			Gender: "male",
@@ -72,8 +72,8 @@
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
-		border: 2px solid var(--primary); 
-		z-index: 22; 
+		border: 2px solid var(--primary);
+		z-index: 22;
 	}
 
 	.scroll-top::after,
