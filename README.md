@@ -1,105 +1,48 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# Diving sheets are annoying...
 
----
+So I made this. It lets you keep your divers names in a spreadsheet with their dives and then
+easily convert them to printable diving sheets to use at a meet. If somehow, anyone who isn't
+the Ply-Mar coach comes across this and wants to use it, go ahead. I can't stop you. Would be
+cool if you let me know though.
 
-# svelte app
+## Instructions
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+- Use Chrome or a Chromium based browser, like Brave or Edge (if you don't know what this means, use Chrome, not Firefox)
+- Either download the public folder and open index.html in your browser, or go to
+  [this page](https://benlubas.github.com/divingSheets/index.html)
+- Download the diverData.csv file and enter the divers' info and dives. Be sure to keep the same format (ie. don't change the header names or move anything around)
+- Upload the csv file to the website and fill out the fields up top.
+- Select the sheets you want to print, hit control + p (or cmnd + p on mac)
+- IMPORTANT: in the print settings of chrome, hit more settings:
+  - Turn off "Headers and footers"
+  - Turn on "Background graphics"
+- From here you can either save the sheets as a PDF or directly print them out
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+## Troubleshooting
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+### Something broke and nothing is showing up? It was almost certainly the csv file that you uploaded
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+1. Make sure the file is a .csv, not a .xlsx or anything else.
+2. Check the header names against the diverData.csv file in here, if they're different redownload
+   the file and copy the headers over, or, better yet, copy the information into the newly downloaded
+   file.
 
+### DD shows as undefined
 
-## Get started
+1. This happens when you enter a dive that my program doesn't know the DD for. This
+   either means that the dive is not legal, or absolutely insane and you have an olympian on
+   your hands.
+2. You can fix this by forking the code and adding the dive to dd.js
+3. If you don't know how to do this and you really need that dive just leave the column blank
+   in the csv file and then print and handwrite it in.
 
-Install the dependencies...
+### Nothing in the print preview
 
-```bash
-cd svelte-app
-npm install
-```
+1. Did you click "Deselect all"? Because that deselects all the "print this one" check boxes,
+   which, believe it or not, work as intended.
 
-...then start [Rollup](https://rollupjs.org):
+### The date is tomorrow
 
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
-
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
-
-## Building and running in production mode
-
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
-
-
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
+1. I assume you're prepared, but not super prepared, so the date defaults to tomorrow.
+   I don't know if you've looked at the program yet, but there is a date picker at the top.
+   It works.

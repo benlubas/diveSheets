@@ -72,6 +72,8 @@
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
+		border: 2px solid var(--primary); 
+		z-index: 22; 
 	}
 
 	.scroll-top::after,

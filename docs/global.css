@@ -1,0 +1,106 @@
+:root {
+  --background: #262a2e;
+  --primary: #63d1fd;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 8.5in;
+  display: block;
+  position: relative;
+  scroll-behavior: smooth;
+}
+.diverInfoTable,
+.divesTable {
+  width: 8in;
+  margin: auto;
+}
+
+.col40 {
+  width: 40%;
+}
+
+.col20 {
+  width: 20%;
+}
+
+.col10 {
+  width: 10%;
+}
+
+thead tr {
+  line-height: 12px;
+}
+
+.table-row tr {
+  line-height: 60px;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tg .tg-0lax {
+  text-align: left;
+  vertical-align: top;
+}
+
+.tg .tg-baqh {
+  text-align: center;
+  vertical-align: top;
+}
+
+.circle {
+  position: relative;
+  --rotation: 0deg;
+  --xScale: 1;
+  --yScale: 1;
+}
+
+.circle::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: calc(100% - 2px);
+  height: calc(100% - 3px);
+  border: 1px solid red;
+  border-radius: 50%;
+  transform: rotateZ(var(--rotation)) scaleX(var(--xScale))
+    scaleY(var(--yScale));
+}
