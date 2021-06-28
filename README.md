@@ -2,14 +2,14 @@
 
 So I made this. It lets you keep your divers names in a spreadsheet with their dives and then
 easily convert them to printable diving sheets to use at a meet. If somehow, anyone who isn't
-the Ply-Mar coach comes across this and wants to use it, go ahead. I can't stop you. Would be
-cool if you let me know though.
+the Ply-Mar coach comes across this and wants to use it, go ahead. I couldn't stop you even if
+I wanted to. Would be cool if you let me know though, maybe leave a comment here. 
 
 ## Instructions
 
 - Use Chrome or a Chromium based browser, like Brave or Edge (if you don't know what this means, use Chrome, not Firefox)
 - Either download the public folder and open index.html in your browser, or go to
-  [this page](https://benlubas.github.com/divingSheets/index.html)
+  [this page](https://benlubas.github.io/divingSheets/index.html)
 - Download the diverData.csv file and enter the divers' info and dives. Be sure to keep the same format (ie. don't change the header names or move anything around)
 - Upload the csv file to the website and fill out the fields up top.
 - Select the sheets you want to print, hit control + p (or cmnd + p on mac)
