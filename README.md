@@ -9,7 +9,7 @@ I wanted to. Would be cool if you let me know though, maybe leave a comment here
 
 - Use Chrome or a Chromium based browser, like Brave or Edge (if you don't know what this means, use Chrome, not Firefox)
 - Either download the public folder and open index.html in your browser, or go to
-  [this page](https://benlubas.github.io/divingSheets/index.html)
+  [this page](https://benlubas.github.io/diveSheets/index.html)
 - Download the diverData.csv file and enter the divers' info and dives. Be sure to keep the same format (ie. don't change the header names or move anything around)
 - Upload the csv file to the website and fill out the fields up top.
 - Select the sheets you want to print, hit control + p (or cmnd + p on mac)
