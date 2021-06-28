@@ -1,59 +1,104 @@
 <script>
-import DiveTableHead from "./components/DiveTableHead.svelte";
+	import DivingSheet from "./components/DivingSheet.svelte";
+	import Papa from "papaparse"; 
+	
 
-	import DiveTableRow from "./components/DiveTableRow.svelte";
-import SheetHeader from "./components/SheetHeader.svelte";
+	let meetName = "PlyMar vs. "; 
+	let club = "Ply-Mar"; 
+	let site = "Ply-Mar";
+	let date = new Date(); 
+
+	$: headerData = {
+		meetName, club, site, date
+	}
+
+	let data = [{
+		Age_Group: "19-22", 
+		Dive_1: "101A", 
+		Dive_2: "103B", 
+		Dive_3: "204B", 
+		Dive_4: "5132D", 
+		Dive_5: "302C", 
+		Dive_6: "402C", 
+		Gender: "male", 
+		Name: "Ben Lubas", 
+		Official_Unofficial: "Unofficial",
+	}];
+
+	//TODO: finish; 
+	function parseData() {
+		this.files[0]; 
+
+		Papa.parse(this.files[0], {
+			header: true,
+			complete: function(res, file) {
+				data = res.data; 
+			}
+		});
+	}
+
+
+
+	// This is going to come from a table. 
+	let diverData = {
+		isMale: true, 
+		name: "Ben Lubas", 
+		ageGroup: "18-22", 
+	}
 
 </script>
 
-<div class='header'>
-	<div class='orderOfDiving'>Order of Diving</div>
-<h1>
-	Suburban Aquatic League 
+<div class="hidePrint">
+	<div class="form-group">
+		<div class='input-group'>
+			<span>Meet: </span>
+			<input type="text" bind:value={meetName} />
+		</div>
+
+		<div class='input-group'>
+			<span>Club: </span>
+			<input type="text" bind:value={club} />
+		</div>
+
+		<div class='input-group'>
+			<span>Location: </span>
+			<input type="text" bind:value={site} />
+		</div>
+
+		<div class='input-group'>
+			<span>Date: </span>
+			<input type="date" bind:value={date} />
+		</div>
+
+		<div class='input-group'>
+			<span>Data: </span>
+			<input type="file" on:change={parseData} />
+		</div>
+
+
+	</div>
+  <br>
+	<hr>
 	<br>
-	Duel Meet Diving Form
-</h1>
 </div>
 
-<SheetHeader name="Ben Lubas" />
 
-<br>
-
-<table class='tg divesTable' >
-	<DiveTableHead />
-
-	
-	<DiveTableRow />
-	<DiveTableRow />
-	<DiveTableRow />
-	<DiveTableRow />
-	<DiveTableRow />
-	<DiveTableRow />
-	<DiveTableRow />
-</table>
+{#if data == undefined}
+  <DivingSheet {headerData} {diverData} />
+{:else}
+	{#each data as row}
+		{#if row.Age_Group !== ""}
+		  <DivingSheet {headerData} {...row} />
+		{/if}
+	{/each}
+{/if}
 
 <style>
-	h1 { 
-		text-align: center;
-		font-family: 'Arial'; 
-		text-transform: uppercase;
-		font-weight: normal
-	}
-	.orderOfDiving {
-		position: relative;
-		display: inline-block; 
-		width: 20px; 
-		margin-top: 30px; 
-		margin-left: 110px; 
-	}
-	.orderOfDiving::after {
-		content: "";
-		padding: 35px;
-		display: inline; 
-		border: 1px solid black; 
-		position: absolute;
-		top: 0px; 
-		right: 0px; 
-		transform: translateX(-50%) translateY(-10px); 
+	.input-group {
+		display: flex; 
+		justify-content: space-between;
+		max-width: 300px; 
+		margin: 3px; 
+		font-size: 1.5rem; 
 	}
 </style>

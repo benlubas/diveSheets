@@ -1,9 +1,17 @@
-html {
+:root {
+  --rotation: 0deg;
+}
+
+html,
+body {
   font-family: Arial, Helvetica, sans-serif;
+  width: 8.5in;
+  display: block;
 }
 .diverInfoTable,
 .divesTable {
-  width: 960px;
+  width: 8in;
+  margin: auto;
 }
 
 .col40 {
@@ -15,15 +23,15 @@ html {
 }
 
 .col10 {
-  width: 10%; 
+  width: 10%;
 }
 
 thead tr {
-  line-height: 15px;
+  line-height: 12px;
 }
 
 .table-row tr {
-  line-height: 75px;
+  line-height: 60px;
 }
 
 .tg {
@@ -38,10 +46,6 @@ thead tr {
 #diveNumbers,
 #pos {
   width: 7%;
-}
-
-#description1 {
-  width: 35%;
 }
 
 #dd {
@@ -61,7 +65,7 @@ thead tr {
   border-style: solid;
   border-width: 1px;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
@@ -72,7 +76,7 @@ thead tr {
   border-style: solid;
   border-width: 1px;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   overflow: hidden;
   padding: 10px 5px;
@@ -95,32 +99,6 @@ thead tr {
   vertical-align: top;
 }
 
-.innerTable {
-  padding: 0;
-  margin: 0;
-  line-height: normal;
-  box-sizing: border-box;
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 101%;
-  height: 105%;
-  border-collapse: collapse;
-}
-
-.innerTable td {
-  font-size: 10px;
-  line-height: normal;
-}
-
-.innerTable tr {
-  height: 33.33%;
-}
-
-#description {
-  position: relative;
-}
-
 .score {
   position: relative;
 }
@@ -133,4 +111,24 @@ thead tr {
   background-color: black;
   top: 60%;
   left: 0;
+}
+
+.circle {
+  position: relative;
+  --rotation: 0deg;
+  --xScale: 1;
+  --yScale: 1;
+}
+
+.circle::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: calc(100% - 2px);
+  height: calc(100% - 3px);
+  border: 1px solid red;
+  border-radius: 50%;
+  transform: rotateZ(var(--rotation)) scaleX(var(--xScale))
+    scaleY(var(--yScale));
 }
