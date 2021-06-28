@@ -1,6 +1,7 @@
 <script>
 	import DivingSheet from "./components/DivingSheet.svelte";
 	import Papa from "papaparse"; 
+import Menu from "./components/Menu.svelte";
 	
 
 	let meetName = "PlyMar vs. "; 
@@ -25,7 +26,9 @@
 		Official_Unofficial: "Unofficial",
 	}];
 
-	//TODO: finish; 
+	$: names = data.map(val => val.Name).filter(val => val !== undefined); 
+
+
 	function parseData() {
 		this.files[0]; 
 
@@ -37,7 +40,7 @@
 		});
 	}
 
-
+	let selectAll = true; 
 
 	// This is going to come from a table. 
 	let diverData = {
@@ -48,7 +51,7 @@
 
 </script>
 
-<div class="hidePrint">
+<div id="top" class="hidePrint">
 	<div class="form-group">
 		<div class='input-group'>
 			<span>Meet: </span>
@@ -75,8 +78,19 @@
 			<input type="file" on:change={parseData} />
 		</div>
 
-
+		<div class='input-group'>
+			<input type="button" on:click={() => selectAll = true} value="Select All" />
+			<input type="button" on:click={() => selectAll = false} value="Deselect All" />
+		</div>
 	</div>
+
+	<Menu {names} />
+	
+	<a href="#top">
+		<div class="scroll-top">
+		</div>
+	</a>
+
   <br>
 	<hr>
 	<br>
@@ -88,7 +102,7 @@
 {:else}
 	{#each data as row}
 		{#if row.Age_Group !== ""}
-		  <DivingSheet {headerData} {...row} />
+		  <DivingSheet print={selectAll} {headerData} {...row} />
 		{/if}
 	{/each}
 {/if}
@@ -100,5 +114,46 @@
 		max-width: 300px; 
 		margin: 3px; 
 		font-size: 1.5rem; 
+	}
+
+	.scroll-top {
+		position: fixed;
+		right: 25px; 
+		bottom: 25px;
+		background: var(--background); 
+    color: var(--primary); 
+		text-decoration: none; 
+		width: 50px; 
+		height: 50px; 
+		border-radius: 50%;
+	}
+
+	.scroll-top::after, .scroll-top::before {
+		content: ""; 
+		width: 10px; 
+		height: 4px; 
+		background: var(--primary); 
+		position: absolute;
+		top: 50%; 
+		left: 50%; 
+		transform: translate(-50%, -50%); 
+	}
+
+	.scroll-top::after {
+		transform-origin: right;
+		transform: translateX(-3px) rotateZ(45deg); 
+	}
+
+	.scroll-top::before {
+		transform-origin: left;
+		transform: translateX(-4px) rotateZ(-45deg);
+	}
+	a {
+		color: inherit; 
+		text-decoration: none;
+	}
+
+	.scroll-top a:active, .scroll-top a:visited {
+		color: inherit; 
 	}
 </style>

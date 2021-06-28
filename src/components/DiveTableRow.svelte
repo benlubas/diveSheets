@@ -60,7 +60,7 @@
       </table>
     </td>
     <td id="dd" class="tg-0lax" rowspan="3">
-      {ddTable[numberPos]}
+      {numberPos !== "" ? ddTable[numberPos] : ""}
     </td>
     <td id="award1" class="tg-0lax" rowspan="3"></td>
     <td id="award2" class="tg-0lax" rowspan="3"></td>
@@ -80,11 +80,15 @@
 
 <style>
  
- .answer {
-   font-size: 13pt; 
-   font-family:'Courier New', Courier, monospace;
-   font-weight: bold;
- }
+  .answer {
+    font-size: 13pt; 
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+
+  .innerTable .answer {
+    color: red;
+  }
 
   .innerTable {
     padding: 0;
@@ -124,5 +128,32 @@
     padding: 0px;
     margin: 0px;
   }
-  
+
+  #diveNumbers,
+  #pos {
+    width: 7%;
+  }
+
+  #dd {
+    width: 6%;
+    text-align: center;
+  }
+
+  #netTotal {
+    width: 7%;
+  }
+
+  .score {
+    position: relative;
+  }
+
+  .score::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    top: 60%;
+    left: 0;
+  }
 </style>

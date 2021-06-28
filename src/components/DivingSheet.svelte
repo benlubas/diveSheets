@@ -28,13 +28,13 @@
 		};
 	}
   
-	let print = true; 
+	export let print = true; 
 
 </script>
 
 
 <div class:hidePrint={!print}>
-	<div class="hidePrint">
+	<div id={Name} class="hidePrint">
 		<span>Print This One: </span>
 		<input type="checkbox" bind:checked={print}>
 	</div>

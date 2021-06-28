@@ -23,3 +23,9 @@
     <td class="center-txt">7</td>
   </tr>
 </thead>
+
+<style>
+  #score {
+    width: 15%;
+  }
+</style>
