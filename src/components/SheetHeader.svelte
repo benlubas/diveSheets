@@ -1,15 +1,17 @@
 <script>
   export let name = "missing name";
   export let ageGroup;
-  export let isMale;
+  export let gender;
   export let club;
   export let meetName;
   export let site;
 
   export let date;
-  $: dateObj = new Date(date); 
-  $: dateObj.setDate(dateObj.getDate() + 1); 
-  $: dateString = dateObj.toLocaleString().substring(0, dateObj.toLocaleString().indexOf(",")); 
+  $: dateObj = new Date(date);
+  $: dateObj.setDate(dateObj.getDate() + 1);
+  $: dateString = dateObj
+    .toLocaleString()
+    .substring(0, dateObj.toLocaleString().indexOf(","));
 </script>
 
 <table class="diverInfoTable tg">
@@ -26,13 +28,13 @@
           <div class="title">Age Group</div>
           <div class="answer">{ageGroup}</div>
         </div>
-        </th>
-      <th class:circle={isMale} class="tg-0pky col10">
+      </th>
+      <th class:circle={gender === "male"} class="tg-0pky col10">
         <div>
           <div class="answer">Male</div>
         </div>
       </th>
-      <th class:circle={!isMale} class="tg-0lax">
+      <th class:circle={gender === "female"} class="tg-0lax">
         <div>
           <div class="answer">Female</div>
         </div>
@@ -46,7 +48,7 @@
           <div class="title">Club Affiliation</div>
           <div class="answer">{club}</div>
         </div>
-        </td>
+      </td>
       <td class="tg-0pky">
         <div>
           <div class="title">Meet</div>
@@ -73,28 +75,28 @@
       <td class="tg-0pky">Diver's Signature</td>
       <td class="tg-0pky">Coach's Signature</td>
       <td class="center-txt tg-0pky" colspan="2">
-        Place (Official Divers Only) 
-        1 2 3 4 5 6
+        Place (Official Divers Only) 1 2 3 4 5 6
       </td>
     </tr>
   </tbody>
 </table>
 
 <style>
-  th div, td div {
+  th div,
+  td div {
     position: relative;
-    display: flex; 
+    display: flex;
   }
   .answer {
     position: absolute;
-    right: 0px; 
-    font-size: larger; 
-    font-family:'Courier New', Courier, monospace;
+    right: 0px;
+    font-size: larger;
+    font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-    word-wrap: unset; 
-    line-break: unset; 
+    word-wrap: unset;
+    line-break: unset;
   }
   .title {
-    display: inline; 
+    display: inline;
   }
 </style>

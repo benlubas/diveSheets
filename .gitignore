@@ -1,6 +1,6 @@
 /node_modules/
 /public/build/
 
-diverData.csv
+/sheets/
 
 .DS_Store

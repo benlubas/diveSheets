@@ -20,13 +20,15 @@
 
   export let headerData;
 
+  let formTitle = "Suburban Swim League <br /> Diving Form";
+
   let diverData;
 
   $: if (Gender) {
     diverData = {
       ageGroup: Age_Group,
       name: Name,
-      isMale: Gender.toLowerCase() === "male" ? true : false,
+      gender: Gender.toLowerCase(),
     };
   }
 
@@ -40,11 +42,7 @@
   </div>
   <div class="header">
     <div class="orderOfDiving">Order of Diving</div>
-    <div class="title">
-      Suburban Swim League
-      <br />
-      Diving Form
-    </div>
+    <div class="title" contenteditable bind:innerHTML={formTitle} />
   </div>
 
   <SheetHeader {...headerData} {...diverData} />
@@ -72,9 +70,9 @@
   .header {
     width: 100%;
     padding-bottom: 15px;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
   }
   .title {
     text-align: center;

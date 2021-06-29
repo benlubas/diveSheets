@@ -3,7 +3,7 @@
 
   export let row = 1;
   export let numberPos;
-  export let firstRow;
+  export let firstRow = false;
 
   let numbers;
   let numbersDisp;
