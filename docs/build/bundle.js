@@ -579,20 +579,20 @@ var app = (function () {
     	let th6;
     	let t14;
     	let th7;
-    	let t16;
+    	let t15;
     	let tr1;
     	let td0;
-    	let t18;
+    	let t17;
     	let td1;
-    	let t20;
+    	let t19;
     	let td2;
-    	let t22;
+    	let t21;
     	let td3;
-    	let t24;
+    	let t23;
     	let td4;
-    	let t26;
+    	let t25;
     	let td5;
-    	let t28;
+    	let t27;
     	let td6;
 
     	const block = {
@@ -624,67 +624,72 @@ var app = (function () {
     			th6.textContent = "Net Total";
     			t14 = space();
     			th7 = element("th");
-    			th7.textContent = "Score";
-    			t16 = space();
+    			t15 = space();
     			tr1 = element("tr");
     			td0 = element("td");
     			td0.textContent = "1";
-    			t18 = space();
+    			t17 = space();
     			td1 = element("td");
     			td1.textContent = "2";
-    			t20 = space();
+    			t19 = space();
     			td2 = element("td");
     			td2.textContent = "3";
-    			t22 = space();
+    			t21 = space();
     			td3 = element("td");
     			td3.textContent = "4";
-    			t24 = space();
+    			t23 = space();
     			td4 = element("td");
     			td4.textContent = "5";
-    			t26 = space();
+    			t25 = space();
     			td5 = element("td");
     			td5.textContent = "6";
-    			t28 = space();
+    			t27 = space();
     			td6 = element("td");
     			td6.textContent = "7";
+    			attr_dev(th0, "id", "num");
     			attr_dev(th0, "rowspan", "2");
-    			add_location(th0, file$6, 6, 4, 46);
+    			attr_dev(th0, "class", "svelte-k1x8h1");
+    			add_location(th0, file$6, 5, 4, 44);
     			attr_dev(th1, "rowspan", "2");
-    			add_location(th1, file$6, 7, 4, 73);
-    			add_location(br0, file$6, 8, 23, 130);
-    			add_location(br1, file$6, 8, 31, 138);
+    			add_location(th1, file$6, 6, 4, 77);
+    			add_location(br0, file$6, 7, 32, 143);
+    			add_location(br1, file$6, 7, 42, 153);
+    			attr_dev(th2, "id", "pos");
     			attr_dev(th2, "rowspan", "2");
-    			add_location(th2, file$6, 8, 4, 111);
+    			attr_dev(th2, "class", "svelte-k1x8h1");
+    			add_location(th2, file$6, 7, 4, 115);
+    			attr_dev(th3, "id", "desc");
     			attr_dev(th3, "rowspan", "2");
-    			add_location(th3, file$6, 9, 4, 156);
+    			attr_dev(th3, "class", "svelte-k1x8h1");
+    			add_location(th3, file$6, 8, 4, 173);
     			attr_dev(th4, "rowspan", "2");
-    			add_location(th4, file$6, 10, 4, 199);
+    			add_location(th4, file$6, 9, 4, 226);
     			attr_dev(th5, "colspan", "7");
-    			add_location(th5, file$6, 11, 4, 230);
+    			add_location(th5, file$6, 10, 4, 257);
     			attr_dev(th6, "rowspan", "2");
-    			add_location(th6, file$6, 12, 4, 271);
+    			add_location(th6, file$6, 11, 4, 298);
     			attr_dev(th7, "id", "score");
     			attr_dev(th7, "colspan", "5");
     			attr_dev(th7, "rowspan", "2");
-    			attr_dev(th7, "class", "svelte-1bb8hso");
-    			add_location(th7, file$6, 13, 4, 307);
-    			add_location(tr0, file$6, 5, 2, 36);
+    			attr_dev(th7, "class", "svelte-k1x8h1");
+    			add_location(th7, file$6, 12, 4, 334);
+    			add_location(tr0, file$6, 4, 2, 34);
     			attr_dev(td0, "class", "center-txt");
-    			add_location(td0, file$6, 16, 4, 379);
+    			add_location(td0, file$6, 15, 4, 398);
     			attr_dev(td1, "class", "center-txt");
-    			add_location(td1, file$6, 17, 4, 414);
+    			add_location(td1, file$6, 16, 4, 433);
     			attr_dev(td2, "class", "center-txt");
-    			add_location(td2, file$6, 18, 4, 449);
+    			add_location(td2, file$6, 17, 4, 468);
     			attr_dev(td3, "class", "center-txt");
-    			add_location(td3, file$6, 19, 4, 484);
+    			add_location(td3, file$6, 18, 4, 503);
     			attr_dev(td4, "class", "center-txt");
-    			add_location(td4, file$6, 20, 4, 519);
+    			add_location(td4, file$6, 19, 4, 538);
     			attr_dev(td5, "class", "center-txt");
-    			add_location(td5, file$6, 21, 4, 554);
+    			add_location(td5, file$6, 20, 4, 573);
     			attr_dev(td6, "class", "center-txt");
-    			add_location(td6, file$6, 22, 4, 589);
-    			add_location(tr1, file$6, 15, 2, 369);
-    			add_location(thead, file$6, 4, 0, 25);
+    			add_location(td6, file$6, 21, 4, 608);
+    			add_location(tr1, file$6, 14, 2, 388);
+    			add_location(thead, file$6, 3, 0, 23);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -712,20 +717,20 @@ var app = (function () {
     			append_dev(tr0, th6);
     			append_dev(tr0, t14);
     			append_dev(tr0, th7);
-    			append_dev(thead, t16);
+    			append_dev(thead, t15);
     			append_dev(thead, tr1);
     			append_dev(tr1, td0);
-    			append_dev(tr1, t18);
+    			append_dev(tr1, t17);
     			append_dev(tr1, td1);
-    			append_dev(tr1, t20);
+    			append_dev(tr1, t19);
     			append_dev(tr1, td2);
-    			append_dev(tr1, t22);
+    			append_dev(tr1, t21);
     			append_dev(tr1, td3);
-    			append_dev(tr1, t24);
+    			append_dev(tr1, t23);
     			append_dev(tr1, td4);
-    			append_dev(tr1, t26);
+    			append_dev(tr1, t25);
     			append_dev(tr1, td5);
-    			append_dev(tr1, t28);
+    			append_dev(tr1, t27);
     			append_dev(tr1, td6);
     		},
     		p: noop,
@@ -886,11 +891,11 @@ var app = (function () {
     /* src\components\DiveTableRow.svelte generated by Svelte v3.38.3 */
     const file$5 = "src\\components\\DiveTableRow.svelte";
 
-    // (140:12) {:else}
-    function create_else_block$1(ctx) {
-    	let t_value = (/*numbers*/ ctx[4][2] >= 2
-    	? `${Math.floor(parseInt(/*numbers*/ ctx[4][2]) / 2)} 
-                ${parseInt(/*numbers*/ ctx[4][2]) % 2 === 1 ? "1/2" : ""} S.S.`
+    // (74:12) {:else}
+    function create_else_block_1(ctx) {
+    	let t_value = (/*numbers*/ ctx[5][2] >= 2
+    	? `${Math.floor(parseInt(/*numbers*/ ctx[5][2]) / 2)} 
+                ${parseInt(/*numbers*/ ctx[5][2]) % 2 === 1 ? "1/2" : ""} S.S.`
     	: "") + "";
 
     	let t;
@@ -903,13 +908,130 @@ var app = (function () {
     			insert_dev(target, t, anchor);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*numbers*/ 16 && t_value !== (t_value = (/*numbers*/ ctx[4][2] >= 2
-    			? `${Math.floor(parseInt(/*numbers*/ ctx[4][2]) / 2)} 
-                ${parseInt(/*numbers*/ ctx[4][2]) % 2 === 1 ? "1/2" : ""} S.S.`
+    			if (dirty & /*numbers*/ 32 && t_value !== (t_value = (/*numbers*/ ctx[5][2] >= 2
+    			? `${Math.floor(parseInt(/*numbers*/ ctx[5][2]) / 2)} 
+                ${parseInt(/*numbers*/ ctx[5][2]) % 2 === 1 ? "1/2" : ""} S.S.`
     			: "") + "")) set_data_dev(t, t_value);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_1.name,
+    		type: "else",
+    		source: "(74:12) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (69:12) {#if twister}
+    function create_if_block_1$1(ctx) {
+    	let t_value = (/*numbers*/ ctx[5][1] >= 2
+    	? `${Math.floor(parseInt(/*numbers*/ ctx[5][1]) / 2)} 
+                ${parseInt(/*numbers*/ ctx[5][1]) % 2 === 1 ? "1/2" : ""} S.S.`
+    	: "") + "";
+
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text(t_value);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*numbers*/ 32 && t_value !== (t_value = (/*numbers*/ ctx[5][1] >= 2
+    			? `${Math.floor(parseInt(/*numbers*/ ctx[5][1]) / 2)} 
+                ${parseInt(/*numbers*/ ctx[5][1]) % 2 === 1 ? "1/2" : ""} S.S.`
+    			: "") + "")) set_data_dev(t, t_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1$1.name,
+    		type: "if",
+    		source: "(69:12) {#if twister}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (128:4) {:else}
+    function create_else_block$1(ctx) {
+    	let td0;
+    	let t0;
+    	let td1;
+    	let t1;
+    	let td2;
+    	let t2;
+    	let td3;
+    	let t3;
+    	let td4;
+
+    	const block = {
+    		c: function create() {
+    			td0 = element("td");
+    			t0 = space();
+    			td1 = element("td");
+    			t1 = space();
+    			td2 = element("td");
+    			t2 = space();
+    			td3 = element("td");
+    			t3 = space();
+    			td4 = element("td");
+    			attr_dev(td0, "id", "score1");
+    			attr_dev(td0, "class", "tg-0lax score svelte-130wkro");
+    			attr_dev(td0, "rowspan", "3");
+    			add_location(td0, file$5, 128, 6, 4308);
+    			attr_dev(td1, "id", "score2");
+    			attr_dev(td1, "class", "tg-0lax score svelte-130wkro");
+    			attr_dev(td1, "rowspan", "3");
+    			add_location(td1, file$5, 129, 6, 4368);
+    			attr_dev(td2, "id", "score3");
+    			attr_dev(td2, "class", "tg-0lax score svelte-130wkro");
+    			attr_dev(td2, "rowspan", "3");
+    			add_location(td2, file$5, 130, 6, 4428);
+    			attr_dev(td3, "id", "score4");
+    			attr_dev(td3, "class", "tg-0lax score svelte-130wkro");
+    			attr_dev(td3, "rowspan", "3");
+    			add_location(td3, file$5, 131, 6, 4488);
+    			attr_dev(td4, "id", "score5");
+    			attr_dev(td4, "class", "tg-0lax score svelte-130wkro");
+    			attr_dev(td4, "rowspan", "3");
+    			add_location(td4, file$5, 132, 6, 4548);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, td0, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, td1, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, td2, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, td3, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, td4, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(td0);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(td1);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(td2);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(td3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(td4);
     		}
     	};
 
@@ -917,37 +1039,102 @@ var app = (function () {
     		block,
     		id: create_else_block$1.name,
     		type: "else",
-    		source: "(140:12) {:else}",
+    		source: "(128:4) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (137:12) {#if twister}
+    // (113:4) {#if firstRow}
     function create_if_block$1(ctx) {
-    	let t_value = (/*numbers*/ ctx[4][1] >= 2
-    	? `${Math.floor(parseInt(/*numbers*/ ctx[4][1]) / 2)} 
-                ${parseInt(/*numbers*/ ctx[4][1]) % 2 === 1 ? "1/2" : ""} S.S.`
-    	: "") + "";
-
-    	let t;
+    	let td6;
+    	let table;
+    	let tr0;
+    	let td0;
+    	let t1;
+    	let tr1;
+    	let td1;
+    	let t3;
+    	let td2;
+    	let t5;
+    	let td3;
+    	let t7;
+    	let td4;
+    	let t9;
+    	let td5;
 
     	const block = {
     		c: function create() {
-    			t = text(t_value);
+    			td6 = element("td");
+    			table = element("table");
+    			tr0 = element("tr");
+    			td0 = element("td");
+    			td0.textContent = "Scores";
+    			t1 = space();
+    			tr1 = element("tr");
+    			td1 = element("td");
+    			td1.textContent = "1";
+    			t3 = space();
+    			td2 = element("td");
+    			td2.textContent = "1";
+    			t5 = space();
+    			td3 = element("td");
+    			td3.textContent = "1";
+    			t7 = space();
+    			td4 = element("td");
+    			td4.textContent = "1";
+    			t9 = space();
+    			td5 = element("td");
+    			td5.textContent = "1";
+    			attr_dev(td0, "id", "score");
+    			attr_dev(td0, "colspan", "5");
+    			attr_dev(td0, "class", "svelte-130wkro");
+    			add_location(td0, file$5, 116, 12, 3873);
+    			attr_dev(tr0, "class", "svelte-130wkro");
+    			add_location(tr0, file$5, 115, 10, 3855);
+    			attr_dev(td1, "id", "score1");
+    			attr_dev(td1, "class", "tg-0lax invis svelte-130wkro");
+    			add_location(td1, file$5, 119, 12, 3958);
+    			attr_dev(td2, "id", "score2");
+    			attr_dev(td2, "class", "tg-0lax invis svelte-130wkro");
+    			add_location(td2, file$5, 120, 12, 4017);
+    			attr_dev(td3, "id", "score3");
+    			attr_dev(td3, "class", "tg-0lax invis svelte-130wkro");
+    			add_location(td3, file$5, 121, 12, 4076);
+    			attr_dev(td4, "id", "score4");
+    			attr_dev(td4, "class", "tg-0lax invis svelte-130wkro");
+    			add_location(td4, file$5, 122, 12, 4135);
+    			attr_dev(td5, "id", "score5");
+    			attr_dev(td5, "class", "tg-0lax invis svelte-130wkro");
+    			add_location(td5, file$5, 123, 12, 4194);
+    			attr_dev(tr1, "class", "svelte-130wkro");
+    			add_location(tr1, file$5, 118, 10, 3940);
+    			attr_dev(table, "class", "scoresTable table svelte-130wkro");
+    			add_location(table, file$5, 114, 8, 3810);
+    			attr_dev(td6, "colspan", "5");
+    			attr_dev(td6, "class", "table-housing svelte-130wkro");
+    			add_location(td6, file$5, 113, 6, 3762);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*numbers*/ 16 && t_value !== (t_value = (/*numbers*/ ctx[4][1] >= 2
-    			? `${Math.floor(parseInt(/*numbers*/ ctx[4][1]) / 2)} 
-                ${parseInt(/*numbers*/ ctx[4][1]) % 2 === 1 ? "1/2" : ""} S.S.`
-    			: "") + "")) set_data_dev(t, t_value);
+    			insert_dev(target, td6, anchor);
+    			append_dev(td6, table);
+    			append_dev(table, tr0);
+    			append_dev(tr0, td0);
+    			append_dev(table, t1);
+    			append_dev(table, tr1);
+    			append_dev(tr1, td1);
+    			append_dev(tr1, t3);
+    			append_dev(tr1, td2);
+    			append_dev(tr1, t5);
+    			append_dev(tr1, td3);
+    			append_dev(tr1, t7);
+    			append_dev(tr1, td4);
+    			append_dev(tr1, t9);
+    			append_dev(tr1, td5);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(td6);
     		}
     	};
 
@@ -955,7 +1142,7 @@ var app = (function () {
     		block,
     		id: create_if_block$1.name,
     		type: "if",
-    		source: "(137:12) {#if twister}",
+    		source: "(113:4) {#if firstRow}",
     		ctx
     	});
 
@@ -969,7 +1156,7 @@ var app = (function () {
     	let t0;
     	let t1;
     	let td1;
-    	let t2_value = (/*twister*/ ctx[3] ? "5" : "") + /*numbers*/ ctx[4] + "";
+    	let t2_value = (/*twister*/ ctx[4] ? "5" : "") + /*numbers*/ ctx[5] + "";
     	let t2;
     	let t3;
     	let td2;
@@ -997,11 +1184,11 @@ var app = (function () {
     	let t20;
     	let td11;
 
-    	let t21_value = (/*twister*/ ctx[3]
-    	? `${Math.floor(parseInt(/*numbers*/ ctx[4][2]) / 2) !== 0
-		? Math.floor(parseInt(/*numbers*/ ctx[4][2]) / 2)
+    	let t21_value = (/*twister*/ ctx[4]
+    	? `${Math.floor(parseInt(/*numbers*/ ctx[5][2]) / 2) !== 0
+		? Math.floor(parseInt(/*numbers*/ ctx[5][2]) / 2)
 		: ""} 
-              ${parseInt(/*numbers*/ ctx[4][2]) % 2 === 1 ? "1/2" : ""} TWIST`
+              ${parseInt(/*numbers*/ ctx[5][2]) % 2 === 1 ? "1/2" : ""} TWIST`
     	: "") + "";
 
     	let t21;
@@ -1036,25 +1223,24 @@ var app = (function () {
     	let t41;
     	let td26;
     	let t42;
-    	let td27;
-    	let t43;
-    	let td28;
-    	let t44;
-    	let td29;
-    	let t45;
-    	let td30;
-    	let t46;
-    	let td31;
     	let mounted;
     	let dispose;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*twister*/ ctx[3]) return create_if_block$1;
-    		return create_else_block$1;
+    		if (/*twister*/ ctx[4]) return create_if_block_1$1;
+    		return create_else_block_1;
     	}
 
     	let current_block_type = select_block_type(ctx);
-    	let if_block = current_block_type(ctx);
+    	let if_block0 = current_block_type(ctx);
+
+    	function select_block_type_1(ctx, dirty) {
+    		if (/*firstRow*/ ctx[1]) return create_if_block$1;
+    		return create_else_block$1;
+    	}
+
+    	let current_block_type_1 = select_block_type_1(ctx);
+    	let if_block1 = current_block_type_1(ctx);
 
     	const block = {
     		c: function create() {
@@ -1067,7 +1253,7 @@ var app = (function () {
     			t2 = text(t2_value);
     			t3 = space();
     			td2 = element("td");
-    			t4 = text(/*pos*/ ctx[2]);
+    			t4 = text(/*pos*/ ctx[3]);
     			t5 = space();
     			td17 = element("td");
     			table = element("table");
@@ -1095,7 +1281,7 @@ var app = (function () {
     			td9.textContent = "DIVE";
     			t19 = space();
     			td10 = element("td");
-    			if_block.c();
+    			if_block0.c();
     			t20 = space();
     			td11 = element("td");
     			t21 = text(t21_value);
@@ -1117,7 +1303,7 @@ var app = (function () {
     			td16.textContent = "FREE";
     			t32 = space();
     			td18 = element("td");
-    			t33 = text(/*dd*/ ctx[5]);
+    			t33 = text(/*dd*/ ctx[6]);
     			t34 = space();
     			td19 = element("td");
     			t35 = space();
@@ -1135,147 +1321,119 @@ var app = (function () {
     			t41 = space();
     			td26 = element("td");
     			t42 = space();
-    			td27 = element("td");
-    			t43 = space();
-    			td28 = element("td");
-    			t44 = space();
-    			td29 = element("td");
-    			t45 = space();
-    			td30 = element("td");
-    			t46 = space();
-    			td31 = element("td");
+    			if_block1.c();
     			attr_dev(td0, "title", "Reset Dive");
     			attr_dev(td0, "id", "number");
     			attr_dev(td0, "rowspan", "3");
-    			attr_dev(td0, "class", "svelte-5krcfg");
-    			add_location(td0, file$5, 118, 4, 2158);
+    			attr_dev(td0, "class", "svelte-130wkro");
+    			add_location(td0, file$5, 34, 4, 977);
     			attr_dev(td1, "contenteditable", "");
     			attr_dev(td1, "id", "diveNumbers");
-    			attr_dev(td1, "class", "tg-0lax answer svelte-5krcfg");
+    			attr_dev(td1, "class", "tg-0lax answer svelte-130wkro");
     			attr_dev(td1, "rowspan", "3");
-    			if (/*numbersDisp*/ ctx[1] === void 0) add_render_callback(() => /*td1_input_handler*/ ctx[8].call(td1));
-    			add_location(td1, file$5, 119, 4, 2238);
+    			if (/*numbersDisp*/ ctx[2] === void 0) add_render_callback(() => /*td1_input_handler*/ ctx[9].call(td1));
+    			add_location(td1, file$5, 35, 4, 1057);
     			attr_dev(td2, "contenteditable", "");
     			attr_dev(td2, "id", "pos");
-    			attr_dev(td2, "class", "tg-0lax answer svelte-5krcfg");
+    			attr_dev(td2, "class", "tg-0lax answer svelte-130wkro");
     			attr_dev(td2, "rowspan", "3");
-    			if (/*pos*/ ctx[2] === void 0) add_render_callback(() => /*td2_input_handler*/ ctx[9].call(td2));
-    			add_location(td2, file$5, 122, 4, 2396);
-    			attr_dev(td3, "class", "svelte-5krcfg");
-    			add_location(td3, file$5, 126, 10, 2612);
-    			attr_dev(td4, "class", "svelte-5krcfg");
-    			add_location(td4, file$5, 127, 10, 2634);
-    			attr_dev(td5, "class", "svelte-5krcfg");
-    			toggle_class(td5, "circle", /*numbers*/ ctx[4][0] === "1");
-    			add_location(td5, file$5, 128, 10, 2656);
-    			attr_dev(td6, "class", "svelte-5krcfg");
-    			toggle_class(td6, "circle", /*numbers*/ ctx[4][0] === "2");
-    			add_location(td6, file$5, 129, 10, 2714);
-    			attr_dev(td7, "class", "svelte-5krcfg");
-    			toggle_class(td7, "circle", /*numbers*/ ctx[4][0] === "3");
-    			add_location(td7, file$5, 130, 10, 2772);
-    			attr_dev(td8, "class", "svelte-5krcfg");
-    			toggle_class(td8, "circle", /*numbers*/ ctx[4][0] === "4");
-    			add_location(td8, file$5, 131, 10, 2830);
-    			attr_dev(tr0, "class", "svelte-5krcfg");
-    			add_location(tr0, file$5, 125, 8, 2596);
+    			if (/*pos*/ ctx[3] === void 0) add_render_callback(() => /*td2_input_handler*/ ctx[10].call(td2));
+    			add_location(td2, file$5, 44, 4, 1256);
+    			attr_dev(td3, "class", "svelte-130wkro");
+    			add_location(td3, file$5, 54, 10, 1513);
+    			attr_dev(td4, "class", "svelte-130wkro");
+    			add_location(td4, file$5, 55, 10, 1535);
+    			attr_dev(td5, "class", "svelte-130wkro");
+    			toggle_class(td5, "circle", /*numbers*/ ctx[5][0] === "1");
+    			add_location(td5, file$5, 56, 10, 1557);
+    			attr_dev(td6, "class", "svelte-130wkro");
+    			toggle_class(td6, "circle", /*numbers*/ ctx[5][0] === "2");
+    			add_location(td6, file$5, 57, 10, 1615);
+    			attr_dev(td7, "class", "svelte-130wkro");
+    			toggle_class(td7, "circle", /*numbers*/ ctx[5][0] === "3");
+    			add_location(td7, file$5, 58, 10, 1673);
+    			attr_dev(td8, "class", "svelte-130wkro");
+    			toggle_class(td8, "circle", /*numbers*/ ctx[5][0] === "4");
+    			add_location(td8, file$5, 59, 10, 1731);
+    			attr_dev(tr0, "class", "svelte-130wkro");
+    			add_location(tr0, file$5, 53, 8, 1497);
     			attr_dev(td9, "colspan", "2");
-    			attr_dev(td9, "class", "svelte-5krcfg");
-    			toggle_class(td9, "circle", !/*twister*/ ctx[3] && /*numbers*/ ctx[4][2] === "1" || /*numbers*/ ctx[4][1] === "1");
-    			add_location(td9, file$5, 134, 10, 2917);
-    			attr_dev(td10, "class", "answer svelte-5krcfg");
+    			attr_dev(td9, "class", "svelte-130wkro");
+    			toggle_class(td9, "circle", !/*twister*/ ctx[4] && /*numbers*/ ctx[5][2] === "1" || /*numbers*/ ctx[5][1] === "1");
+    			add_location(td9, file$5, 62, 10, 1818);
+    			attr_dev(td10, "class", "answer svelte-130wkro");
     			attr_dev(td10, "colspan", "2");
-    			add_location(td10, file$5, 135, 10, 3023);
-    			attr_dev(td11, "class", "answer svelte-5krcfg");
+    			add_location(td10, file$5, 67, 10, 1978);
+    			attr_dev(td11, "class", "answer svelte-130wkro");
     			attr_dev(td11, "colspan", "2");
-    			add_location(td11, file$5, 144, 10, 3454);
-    			attr_dev(tr1, "class", "svelte-5krcfg");
-    			add_location(tr1, file$5, 133, 8, 2901);
-    			attr_dev(td12, "class", "col20 svelte-5krcfg");
+    			add_location(td11, file$5, 80, 10, 2477);
+    			attr_dev(tr1, "class", "svelte-130wkro");
+    			add_location(tr1, file$5, 61, 8, 1802);
+    			attr_dev(td12, "class", "col20 svelte-130wkro");
     			attr_dev(td12, "colspan", "2");
-    			add_location(td12, file$5, 150, 10, 3734);
-    			attr_dev(td13, "class", "col20 svelte-5krcfg");
-    			toggle_class(td13, "circle", /*pos*/ ctx[2] === "C");
-    			add_location(td13, file$5, 151, 10, 3784);
-    			attr_dev(td14, "class", "col20 svelte-5krcfg");
-    			toggle_class(td14, "circle", /*pos*/ ctx[2] === "B");
-    			add_location(td14, file$5, 152, 10, 3849);
-    			attr_dev(td15, "class", "col20 svelte-5krcfg");
-    			toggle_class(td15, "circle", /*pos*/ ctx[2] === "A");
-    			add_location(td15, file$5, 153, 10, 3915);
-    			attr_dev(td16, "class", "col20 svelte-5krcfg");
-    			toggle_class(td16, "circle", /*pos*/ ctx[2] === "D");
-    			add_location(td16, file$5, 154, 10, 3980);
-    			attr_dev(tr2, "class", "svelte-5krcfg");
-    			add_location(tr2, file$5, 149, 8, 3718);
-    			attr_dev(table, "class", "innerTable table svelte-5krcfg");
-    			add_location(table, file$5, 124, 6, 2554);
+    			add_location(td12, file$5, 92, 10, 2867);
+    			attr_dev(td13, "class", "col20 svelte-130wkro");
+    			toggle_class(td13, "circle", /*pos*/ ctx[3] === "C");
+    			add_location(td13, file$5, 93, 10, 2917);
+    			attr_dev(td14, "class", "col20 svelte-130wkro");
+    			toggle_class(td14, "circle", /*pos*/ ctx[3] === "B");
+    			add_location(td14, file$5, 94, 10, 2982);
+    			attr_dev(td15, "class", "col20 svelte-130wkro");
+    			toggle_class(td15, "circle", /*pos*/ ctx[3] === "A");
+    			add_location(td15, file$5, 95, 10, 3048);
+    			attr_dev(td16, "class", "col20 svelte-130wkro");
+    			toggle_class(td16, "circle", /*pos*/ ctx[3] === "D");
+    			add_location(td16, file$5, 96, 10, 3113);
+    			attr_dev(tr2, "class", "svelte-130wkro");
+    			add_location(tr2, file$5, 91, 8, 2851);
+    			attr_dev(table, "class", "innerTable table svelte-130wkro");
+    			add_location(table, file$5, 52, 6, 1455);
     			attr_dev(td17, "id", "description");
     			attr_dev(td17, "rowspan", "3");
-    			attr_dev(td17, "class", "tg-0lax svelte-5krcfg");
-    			add_location(td17, file$5, 123, 4, 2497);
+    			attr_dev(td17, "class", "tg-0lax svelte-130wkro");
+    			add_location(td17, file$5, 51, 4, 1398);
     			attr_dev(td18, "contenteditable", "");
     			attr_dev(td18, "id", "dd");
-    			attr_dev(td18, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td18, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td18, "rowspan", "3");
-    			if (/*dd*/ ctx[5] === void 0) add_render_callback(() => /*td18_input_handler*/ ctx[10].call(td18));
-    			add_location(td18, file$5, 158, 4, 4082);
+    			if (/*dd*/ ctx[6] === void 0) add_render_callback(() => /*td18_input_handler*/ ctx[11].call(td18));
+    			add_location(td18, file$5, 100, 4, 3215);
     			attr_dev(td19, "id", "award1");
-    			attr_dev(td19, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td19, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td19, "rowspan", "3");
-    			add_location(td19, file$5, 161, 4, 4187);
+    			add_location(td19, file$5, 103, 4, 3320);
     			attr_dev(td20, "id", "award2");
-    			attr_dev(td20, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td20, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td20, "rowspan", "3");
-    			add_location(td20, file$5, 162, 4, 4239);
+    			add_location(td20, file$5, 104, 4, 3372);
     			attr_dev(td21, "id", "award3");
-    			attr_dev(td21, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td21, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td21, "rowspan", "3");
-    			add_location(td21, file$5, 163, 4, 4291);
+    			add_location(td21, file$5, 105, 4, 3424);
     			attr_dev(td22, "id", "award4");
-    			attr_dev(td22, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td22, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td22, "rowspan", "3");
-    			add_location(td22, file$5, 164, 4, 4343);
+    			add_location(td22, file$5, 106, 4, 3476);
     			attr_dev(td23, "id", "award5");
-    			attr_dev(td23, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td23, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td23, "rowspan", "3");
-    			add_location(td23, file$5, 165, 4, 4395);
+    			add_location(td23, file$5, 107, 4, 3528);
     			attr_dev(td24, "id", "award6");
-    			attr_dev(td24, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td24, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td24, "rowspan", "3");
-    			add_location(td24, file$5, 166, 4, 4447);
+    			add_location(td24, file$5, 108, 4, 3580);
     			attr_dev(td25, "id", "award7");
-    			attr_dev(td25, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td25, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td25, "rowspan", "3");
-    			add_location(td25, file$5, 167, 4, 4499);
+    			add_location(td25, file$5, 109, 4, 3632);
     			attr_dev(td26, "id", "netTotal");
-    			attr_dev(td26, "class", "tg-0lax svelte-5krcfg");
+    			attr_dev(td26, "class", "tg-0lax svelte-130wkro");
     			attr_dev(td26, "rowspan", "3");
-    			add_location(td26, file$5, 168, 4, 4551);
-    			attr_dev(td27, "id", "score1");
-    			attr_dev(td27, "class", "tg-0lax score svelte-5krcfg");
-    			attr_dev(td27, "rowspan", "3");
-    			add_location(td27, file$5, 169, 4, 4605);
-    			attr_dev(td28, "id", "score2");
-    			attr_dev(td28, "class", "tg-0lax score svelte-5krcfg");
-    			attr_dev(td28, "rowspan", "3");
-    			add_location(td28, file$5, 170, 4, 4663);
-    			attr_dev(td29, "id", "score3");
-    			attr_dev(td29, "class", "tg-0lax score svelte-5krcfg");
-    			attr_dev(td29, "rowspan", "3");
-    			add_location(td29, file$5, 171, 4, 4721);
-    			attr_dev(td30, "id", "score4");
-    			attr_dev(td30, "class", "tg-0lax score svelte-5krcfg");
-    			attr_dev(td30, "rowspan", "3");
-    			add_location(td30, file$5, 172, 4, 4779);
-    			attr_dev(td31, "id", "score5");
-    			attr_dev(td31, "class", "tg-0lax score svelte-5krcfg");
-    			attr_dev(td31, "rowspan", "3");
-    			add_location(td31, file$5, 173, 4, 4837);
-    			attr_dev(tr3, "class", "svelte-5krcfg");
-    			add_location(tr3, file$5, 117, 2, 2148);
+    			add_location(td26, file$5, 110, 4, 3684);
+    			attr_dev(tr3, "class", "svelte-130wkro");
+    			add_location(tr3, file$5, 33, 2, 967);
     			attr_dev(tbody, "class", "table-row");
-    			add_location(tbody, file$5, 116, 0, 2119);
+    			add_location(tbody, file$5, 32, 0, 938);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1289,16 +1447,16 @@ var app = (function () {
     			append_dev(tr3, td1);
     			append_dev(td1, t2);
 
-    			if (/*numbersDisp*/ ctx[1] !== void 0) {
-    				td1.innerHTML = /*numbersDisp*/ ctx[1];
+    			if (/*numbersDisp*/ ctx[2] !== void 0) {
+    				td1.innerHTML = /*numbersDisp*/ ctx[2];
     			}
 
     			append_dev(tr3, t3);
     			append_dev(tr3, td2);
     			append_dev(td2, t4);
 
-    			if (/*pos*/ ctx[2] !== void 0) {
-    				td2.innerHTML = /*pos*/ ctx[2];
+    			if (/*pos*/ ctx[3] !== void 0) {
+    				td2.innerHTML = /*pos*/ ctx[3];
     			}
 
     			append_dev(tr3, t5);
@@ -1321,7 +1479,7 @@ var app = (function () {
     			append_dev(tr1, td9);
     			append_dev(tr1, t19);
     			append_dev(tr1, td10);
-    			if_block.m(td10, null);
+    			if_block0.m(td10, null);
     			append_dev(tr1, t20);
     			append_dev(tr1, td11);
     			append_dev(td11, t21);
@@ -1340,8 +1498,8 @@ var app = (function () {
     			append_dev(tr3, td18);
     			append_dev(td18, t33);
 
-    			if (/*dd*/ ctx[5] !== void 0) {
-    				td18.innerHTML = /*dd*/ ctx[5];
+    			if (/*dd*/ ctx[6] !== void 0) {
+    				td18.innerHTML = /*dd*/ ctx[6];
     			}
 
     			append_dev(tr3, t34);
@@ -1361,22 +1519,14 @@ var app = (function () {
     			append_dev(tr3, t41);
     			append_dev(tr3, td26);
     			append_dev(tr3, t42);
-    			append_dev(tr3, td27);
-    			append_dev(tr3, t43);
-    			append_dev(tr3, td28);
-    			append_dev(tr3, t44);
-    			append_dev(tr3, td29);
-    			append_dev(tr3, t45);
-    			append_dev(tr3, td30);
-    			append_dev(tr3, t46);
-    			append_dev(tr3, td31);
+    			if_block1.m(tr3, null);
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(td0, "click", /*reset*/ ctx[6], false, false, false),
-    					listen_dev(td1, "input", /*td1_input_handler*/ ctx[8]),
-    					listen_dev(td2, "input", /*td2_input_handler*/ ctx[9]),
-    					listen_dev(td18, "input", /*td18_input_handler*/ ctx[10])
+    					listen_dev(td0, "click", /*reset*/ ctx[7], false, false, false),
+    					listen_dev(td1, "input", /*td1_input_handler*/ ctx[9]),
+    					listen_dev(td2, "input", /*td2_input_handler*/ ctx[10]),
+    					listen_dev(td18, "input", /*td18_input_handler*/ ctx[11])
     				];
 
     				mounted = true;
@@ -1384,84 +1534,95 @@ var app = (function () {
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*row*/ 1) set_data_dev(t0, /*row*/ ctx[0]);
-    			if (dirty & /*twister, numbers*/ 24 && t2_value !== (t2_value = (/*twister*/ ctx[3] ? "5" : "") + /*numbers*/ ctx[4] + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*twister, numbers*/ 48 && t2_value !== (t2_value = (/*twister*/ ctx[4] ? "5" : "") + /*numbers*/ ctx[5] + "")) set_data_dev(t2, t2_value);
 
-    			if (dirty & /*numbersDisp*/ 2 && /*numbersDisp*/ ctx[1] !== td1.innerHTML) {
-    				td1.innerHTML = /*numbersDisp*/ ctx[1];
+    			if (dirty & /*numbersDisp*/ 4 && /*numbersDisp*/ ctx[2] !== td1.innerHTML) {
+    				td1.innerHTML = /*numbersDisp*/ ctx[2];
     			}
 
-    			if (dirty & /*pos*/ 4) set_data_dev(t4, /*pos*/ ctx[2]);
+    			if (dirty & /*pos*/ 8) set_data_dev(t4, /*pos*/ ctx[3]);
 
-    			if (dirty & /*pos*/ 4 && /*pos*/ ctx[2] !== td2.innerHTML) {
-    				td2.innerHTML = /*pos*/ ctx[2];
+    			if (dirty & /*pos*/ 8 && /*pos*/ ctx[3] !== td2.innerHTML) {
+    				td2.innerHTML = /*pos*/ ctx[3];
     			}
 
-    			if (dirty & /*numbers*/ 16) {
-    				toggle_class(td5, "circle", /*numbers*/ ctx[4][0] === "1");
+    			if (dirty & /*numbers*/ 32) {
+    				toggle_class(td5, "circle", /*numbers*/ ctx[5][0] === "1");
     			}
 
-    			if (dirty & /*numbers*/ 16) {
-    				toggle_class(td6, "circle", /*numbers*/ ctx[4][0] === "2");
+    			if (dirty & /*numbers*/ 32) {
+    				toggle_class(td6, "circle", /*numbers*/ ctx[5][0] === "2");
     			}
 
-    			if (dirty & /*numbers*/ 16) {
-    				toggle_class(td7, "circle", /*numbers*/ ctx[4][0] === "3");
+    			if (dirty & /*numbers*/ 32) {
+    				toggle_class(td7, "circle", /*numbers*/ ctx[5][0] === "3");
     			}
 
-    			if (dirty & /*numbers*/ 16) {
-    				toggle_class(td8, "circle", /*numbers*/ ctx[4][0] === "4");
+    			if (dirty & /*numbers*/ 32) {
+    				toggle_class(td8, "circle", /*numbers*/ ctx[5][0] === "4");
     			}
 
-    			if (dirty & /*twister, numbers*/ 24) {
-    				toggle_class(td9, "circle", !/*twister*/ ctx[3] && /*numbers*/ ctx[4][2] === "1" || /*numbers*/ ctx[4][1] === "1");
+    			if (dirty & /*twister, numbers*/ 48) {
+    				toggle_class(td9, "circle", !/*twister*/ ctx[4] && /*numbers*/ ctx[5][2] === "1" || /*numbers*/ ctx[5][1] === "1");
     			}
 
-    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block) {
-    				if_block.p(ctx, dirty);
+    			if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block0) {
+    				if_block0.p(ctx, dirty);
     			} else {
-    				if_block.d(1);
-    				if_block = current_block_type(ctx);
+    				if_block0.d(1);
+    				if_block0 = current_block_type(ctx);
 
-    				if (if_block) {
-    					if_block.c();
-    					if_block.m(td10, null);
+    				if (if_block0) {
+    					if_block0.c();
+    					if_block0.m(td10, null);
     				}
     			}
 
-    			if (dirty & /*twister, numbers*/ 24 && t21_value !== (t21_value = (/*twister*/ ctx[3]
-    			? `${Math.floor(parseInt(/*numbers*/ ctx[4][2]) / 2) !== 0
-				? Math.floor(parseInt(/*numbers*/ ctx[4][2]) / 2)
+    			if (dirty & /*twister, numbers*/ 48 && t21_value !== (t21_value = (/*twister*/ ctx[4]
+    			? `${Math.floor(parseInt(/*numbers*/ ctx[5][2]) / 2) !== 0
+				? Math.floor(parseInt(/*numbers*/ ctx[5][2]) / 2)
 				: ""} 
-              ${parseInt(/*numbers*/ ctx[4][2]) % 2 === 1 ? "1/2" : ""} TWIST`
+              ${parseInt(/*numbers*/ ctx[5][2]) % 2 === 1 ? "1/2" : ""} TWIST`
     			: "") + "")) set_data_dev(t21, t21_value);
 
-    			if (dirty & /*pos*/ 4) {
-    				toggle_class(td13, "circle", /*pos*/ ctx[2] === "C");
+    			if (dirty & /*pos*/ 8) {
+    				toggle_class(td13, "circle", /*pos*/ ctx[3] === "C");
     			}
 
-    			if (dirty & /*pos*/ 4) {
-    				toggle_class(td14, "circle", /*pos*/ ctx[2] === "B");
+    			if (dirty & /*pos*/ 8) {
+    				toggle_class(td14, "circle", /*pos*/ ctx[3] === "B");
     			}
 
-    			if (dirty & /*pos*/ 4) {
-    				toggle_class(td15, "circle", /*pos*/ ctx[2] === "A");
+    			if (dirty & /*pos*/ 8) {
+    				toggle_class(td15, "circle", /*pos*/ ctx[3] === "A");
     			}
 
-    			if (dirty & /*pos*/ 4) {
-    				toggle_class(td16, "circle", /*pos*/ ctx[2] === "D");
+    			if (dirty & /*pos*/ 8) {
+    				toggle_class(td16, "circle", /*pos*/ ctx[3] === "D");
     			}
 
-    			if (dirty & /*dd*/ 32) set_data_dev(t33, /*dd*/ ctx[5]);
+    			if (dirty & /*dd*/ 64) set_data_dev(t33, /*dd*/ ctx[6]);
 
-    			if (dirty & /*dd*/ 32 && /*dd*/ ctx[5] !== td18.innerHTML) {
-    				td18.innerHTML = /*dd*/ ctx[5];
+    			if (dirty & /*dd*/ 64 && /*dd*/ ctx[6] !== td18.innerHTML) {
+    				td18.innerHTML = /*dd*/ ctx[6];
+    			}
+
+    			if (current_block_type_1 !== (current_block_type_1 = select_block_type_1(ctx))) {
+    				if_block1.d(1);
+    				if_block1 = current_block_type_1(ctx);
+
+    				if (if_block1) {
+    					if_block1.c();
+    					if_block1.m(tr3, null);
+    				}
     			}
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(tbody);
-    			if_block.d();
+    			if_block0.d();
+    			if_block1.d();
     			mounted = false;
     			run_all(dispose);
     		}
@@ -1485,6 +1646,7 @@ var app = (function () {
     	validate_slots("DiveTableRow", slots, []);
     	let { row = 1 } = $$props;
     	let { numberPos } = $$props;
+    	let { firstRow } = $$props;
     	let numbers;
     	let numbersDisp;
     	let pos;
@@ -1495,15 +1657,15 @@ var app = (function () {
     	}
 
     	const reset = () => {
-    		$$invalidate(1, numbersDisp = numberPos.substring(0, numberPos.length - 1));
-    		$$invalidate(2, pos = numberPos.charAt(numberPos.length - 1).toUpperCase());
+    		$$invalidate(2, numbersDisp = numberPos.substring(0, numberPos.length - 1));
+    		$$invalidate(3, pos = numberPos.charAt(numberPos.length - 1).toUpperCase());
 
-    		$$invalidate(5, dd = numbersDisp + pos === ""
+    		$$invalidate(6, dd = numbersDisp + pos === ""
     		? ""
     		: ddTable[numbersDisp + pos]);
     	};
 
-    	const writable_props = ["row", "numberPos"];
+    	const writable_props = ["row", "numberPos", "firstRow"];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<DiveTableRow> was created with unknown prop '${key}'`);
@@ -1511,28 +1673,30 @@ var app = (function () {
 
     	function td1_input_handler() {
     		numbersDisp = this.innerHTML;
-    		($$invalidate(1, numbersDisp), $$invalidate(7, numberPos));
+    		($$invalidate(2, numbersDisp), $$invalidate(8, numberPos));
     	}
 
     	function td2_input_handler() {
     		pos = this.innerHTML;
-    		($$invalidate(2, pos), $$invalidate(7, numberPos));
+    		($$invalidate(3, pos), $$invalidate(8, numberPos));
     	}
 
     	function td18_input_handler() {
     		dd = this.innerHTML;
-    		((($$invalidate(5, dd), $$invalidate(1, numbersDisp)), $$invalidate(2, pos)), $$invalidate(7, numberPos));
+    		((($$invalidate(6, dd), $$invalidate(2, numbersDisp)), $$invalidate(3, pos)), $$invalidate(8, numberPos));
     	}
 
     	$$self.$$set = $$props => {
     		if ("row" in $$props) $$invalidate(0, row = $$props.row);
-    		if ("numberPos" in $$props) $$invalidate(7, numberPos = $$props.numberPos);
+    		if ("numberPos" in $$props) $$invalidate(8, numberPos = $$props.numberPos);
+    		if ("firstRow" in $$props) $$invalidate(1, firstRow = $$props.firstRow);
     	};
 
     	$$self.$capture_state = () => ({
     		ddTable,
     		row,
     		numberPos,
+    		firstRow,
     		numbers,
     		numbersDisp,
     		pos,
@@ -1543,12 +1707,13 @@ var app = (function () {
 
     	$$self.$inject_state = $$props => {
     		if ("row" in $$props) $$invalidate(0, row = $$props.row);
-    		if ("numberPos" in $$props) $$invalidate(7, numberPos = $$props.numberPos);
-    		if ("numbers" in $$props) $$invalidate(4, numbers = $$props.numbers);
-    		if ("numbersDisp" in $$props) $$invalidate(1, numbersDisp = $$props.numbersDisp);
-    		if ("pos" in $$props) $$invalidate(2, pos = $$props.pos);
-    		if ("dd" in $$props) $$invalidate(5, dd = $$props.dd);
-    		if ("twister" in $$props) $$invalidate(3, twister = $$props.twister);
+    		if ("numberPos" in $$props) $$invalidate(8, numberPos = $$props.numberPos);
+    		if ("firstRow" in $$props) $$invalidate(1, firstRow = $$props.firstRow);
+    		if ("numbers" in $$props) $$invalidate(5, numbers = $$props.numbers);
+    		if ("numbersDisp" in $$props) $$invalidate(2, numbersDisp = $$props.numbersDisp);
+    		if ("pos" in $$props) $$invalidate(3, pos = $$props.pos);
+    		if ("dd" in $$props) $$invalidate(6, dd = $$props.dd);
+    		if ("twister" in $$props) $$invalidate(4, twister = $$props.twister);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -1556,35 +1721,36 @@ var app = (function () {
     	}
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*numberPos*/ 128) {
-    			$$invalidate(1, numbersDisp = numberPos.substring(0, numberPos.length - 1));
+    		if ($$self.$$.dirty & /*numberPos*/ 256) {
+    			$$invalidate(2, numbersDisp = numberPos.substring(0, numberPos.length - 1));
     		}
 
-    		if ($$self.$$.dirty & /*numberPos*/ 128) {
-    			$$invalidate(2, pos = numberPos.charAt(numberPos.length - 1).toUpperCase());
+    		if ($$self.$$.dirty & /*numberPos*/ 256) {
+    			$$invalidate(3, pos = numberPos.charAt(numberPos.length - 1).toUpperCase());
     		}
 
-    		if ($$self.$$.dirty & /*pos*/ 4) {
-    			$$invalidate(2, pos = pos.toUpperCase());
+    		if ($$self.$$.dirty & /*pos*/ 8) {
+    			$$invalidate(3, pos = pos.toUpperCase());
     		}
 
-    		if ($$self.$$.dirty & /*numbersDisp, pos*/ 6) {
-    			$$invalidate(5, dd = numbersDisp + pos === ""
+    		if ($$self.$$.dirty & /*numbersDisp, pos*/ 12) {
+    			$$invalidate(6, dd = numbersDisp + pos === ""
     			? ""
     			: ddTable[numbersDisp + pos]);
     		}
 
-    		if ($$self.$$.dirty & /*numbersDisp*/ 2) {
-    			$$invalidate(3, twister = numbersDisp[0] === "5");
+    		if ($$self.$$.dirty & /*numbersDisp*/ 4) {
+    			$$invalidate(4, twister = numbersDisp[0] === "5");
     		}
 
-    		if ($$self.$$.dirty & /*twister, numbersDisp*/ 10) {
-    			$$invalidate(4, numbers = twister ? numbersDisp.substring(1) : numbersDisp);
+    		if ($$self.$$.dirty & /*twister, numbersDisp*/ 20) {
+    			$$invalidate(5, numbers = twister ? numbersDisp.substring(1) : numbersDisp);
     		}
     	};
 
     	return [
     		row,
+    		firstRow,
     		numbersDisp,
     		pos,
     		twister,
@@ -1601,7 +1767,7 @@ var app = (function () {
     class DiveTableRow extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$5, create_fragment$5, safe_not_equal, { row: 0, numberPos: 7 });
+    		init(this, options, instance$5, create_fragment$5, safe_not_equal, { row: 0, numberPos: 8, firstRow: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -1613,8 +1779,12 @@ var app = (function () {
     		const { ctx } = this.$$;
     		const props = options.props || {};
 
-    		if (/*numberPos*/ ctx[7] === undefined && !("numberPos" in props)) {
+    		if (/*numberPos*/ ctx[8] === undefined && !("numberPos" in props)) {
     			console.warn("<DiveTableRow> was created without expected prop 'numberPos'");
+    		}
+
+    		if (/*firstRow*/ ctx[1] === undefined && !("firstRow" in props)) {
+    			console.warn("<DiveTableRow> was created without expected prop 'firstRow'");
     		}
     	}
 
@@ -1631,6 +1801,14 @@ var app = (function () {
     	}
 
     	set numberPos(value) {
+    		throw new Error("<DiveTableRow>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get firstRow() {
+    		throw new Error("<DiveTableRow>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set firstRow(value) {
     		throw new Error("<DiveTableRow>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
@@ -2306,13 +2484,17 @@ var app = (function () {
     	let t15;
     	let divetablerow5;
     	let t16;
-    	let footer;
+    	let divetablerow6;
     	let t17;
+    	let divetablerow7;
+    	let t18;
+    	let footer;
+    	let t19;
     	let div4;
     	let current;
     	let mounted;
     	let dispose;
-    	const sheetheader_spread_levels = [/*headerData*/ ctx[9], /*diverData*/ ctx[10]];
+    	const sheetheader_spread_levels = [/*headerData*/ ctx[11], /*diverData*/ ctx[12]];
     	let sheetheader_props = {};
 
     	for (let i = 0; i < sheetheader_spread_levels.length; i += 1) {
@@ -2323,7 +2505,11 @@ var app = (function () {
     	divetablehead = new DiveTableHead({ $$inline: true });
 
     	divetablerow0 = new DiveTableRow({
-    			props: { row: "1", numberPos: /*Dive_1*/ ctx[1] },
+    			props: {
+    				firstRow: true,
+    				row: "1",
+    				numberPos: /*Dive_1*/ ctx[1]
+    			},
     			$$inline: true
     		});
 
@@ -2352,9 +2538,19 @@ var app = (function () {
     			$$inline: true
     		});
 
+    	divetablerow6 = new DiveTableRow({
+    			props: { row: "7", numberPos: /*Dive_7*/ ctx[7] },
+    			$$inline: true
+    		});
+
+    	divetablerow7 = new DiveTableRow({
+    			props: { row: "8", numberPos: /*Dive_8*/ ctx[8] },
+    			$$inline: true
+    		});
+
     	footer = new Footer({
     			props: {
-    				official: /*Official_Unofficial*/ ctx[8].toLowerCase()
+    				official: /*Official_Unofficial*/ ctx[10].toLowerCase()
     			},
     			$$inline: true
     		});
@@ -2373,9 +2569,9 @@ var app = (function () {
     			div1.textContent = "Order of Diving";
     			t4 = space();
     			div2 = element("div");
-    			t5 = text("Suburban Swim League \r\n\t\t\t");
+    			t5 = text("Suburban Swim League\r\n      ");
     			br0 = element("br");
-    			t6 = text("\r\n\t\t\tDiving Form");
+    			t6 = text("\r\n      Diving Form");
     			t7 = space();
     			create_component(sheetheader.$$.fragment);
     			t8 = space();
@@ -2396,29 +2592,33 @@ var app = (function () {
     			t15 = space();
     			create_component(divetablerow5.$$.fragment);
     			t16 = space();
-    			create_component(footer.$$.fragment);
+    			create_component(divetablerow6.$$.fragment);
     			t17 = space();
+    			create_component(divetablerow7.$$.fragment);
+    			t18 = space();
+    			create_component(footer.$$.fragment);
+    			t19 = space();
     			div4 = element("div");
-    			add_location(span, file$2, 37, 2, 773);
+    			add_location(span, file$2, 37, 4, 825);
     			attr_dev(input, "type", "checkbox");
-    			add_location(input, file$2, 38, 2, 806);
-    			attr_dev(div0, "id", /*Name*/ ctx[7]);
+    			add_location(input, file$2, 38, 4, 860);
+    			attr_dev(div0, "id", /*Name*/ ctx[9]);
     			attr_dev(div0, "class", "hidePrint");
-    			add_location(div0, file$2, 36, 1, 736);
-    			attr_dev(div1, "class", "orderOfDiving svelte-121m9nt");
-    			add_location(div1, file$2, 41, 2, 886);
-    			add_location(br0, file$2, 44, 3, 988);
-    			attr_dev(div2, "class", "title svelte-121m9nt");
-    			add_location(div2, file$2, 42, 2, 938);
-    			attr_dev(div3, "class", "header svelte-121m9nt");
-    			add_location(div3, file$2, 40, 1, 862);
-    			add_location(br1, file$2, 51, 1, 1083);
+    			add_location(div0, file$2, 36, 2, 786);
+    			attr_dev(div1, "class", "orderOfDiving svelte-1c683ln");
+    			add_location(div1, file$2, 41, 4, 946);
+    			add_location(br0, file$2, 44, 6, 1055);
+    			attr_dev(div2, "class", "title svelte-1c683ln");
+    			add_location(div2, file$2, 42, 4, 1000);
+    			attr_dev(div3, "class", "header svelte-1c683ln");
+    			add_location(div3, file$2, 40, 2, 920);
+    			add_location(br1, file$2, 51, 2, 1160);
     			attr_dev(table, "class", "tg divesTable");
-    			add_location(table, file$2, 53, 1, 1092);
+    			add_location(table, file$2, 53, 2, 1172);
     			set_style(div4, "page-break-after", "always");
-    			add_location(div4, file$2, 67, 1, 1501);
+    			add_location(div4, file$2, 67, 2, 1704);
     			toggle_class(div5, "hidePrint", !/*print*/ ctx[0]);
-    			add_location(div5, file$2, 35, 0, 703);
+    			add_location(div5, file$2, 35, 0, 752);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2457,14 +2657,18 @@ var app = (function () {
     			mount_component(divetablerow4, table, null);
     			append_dev(table, t15);
     			mount_component(divetablerow5, table, null);
-    			append_dev(div5, t16);
+    			append_dev(table, t16);
+    			mount_component(divetablerow6, table, null);
+    			append_dev(table, t17);
+    			mount_component(divetablerow7, table, null);
+    			append_dev(div5, t18);
     			mount_component(footer, div5, null);
-    			append_dev(div5, t17);
+    			append_dev(div5, t19);
     			append_dev(div5, div4);
     			current = true;
 
     			if (!mounted) {
-    				dispose = listen_dev(input, "change", /*input_change_handler*/ ctx[13]);
+    				dispose = listen_dev(input, "change", /*input_change_handler*/ ctx[15]);
     				mounted = true;
     			}
     		},
@@ -2473,14 +2677,14 @@ var app = (function () {
     				input.checked = /*print*/ ctx[0];
     			}
 
-    			if (!current || dirty & /*Name*/ 128) {
-    				attr_dev(div0, "id", /*Name*/ ctx[7]);
+    			if (!current || dirty & /*Name*/ 512) {
+    				attr_dev(div0, "id", /*Name*/ ctx[9]);
     			}
 
-    			const sheetheader_changes = (dirty & /*headerData, diverData*/ 1536)
+    			const sheetheader_changes = (dirty & /*headerData, diverData*/ 6144)
     			? get_spread_update(sheetheader_spread_levels, [
-    					dirty & /*headerData*/ 512 && get_spread_object(/*headerData*/ ctx[9]),
-    					dirty & /*diverData*/ 1024 && get_spread_object(/*diverData*/ ctx[10])
+    					dirty & /*headerData*/ 2048 && get_spread_object(/*headerData*/ ctx[11]),
+    					dirty & /*diverData*/ 4096 && get_spread_object(/*diverData*/ ctx[12])
     				])
     			: {};
 
@@ -2503,8 +2707,14 @@ var app = (function () {
     			const divetablerow5_changes = {};
     			if (dirty & /*Dive_6*/ 64) divetablerow5_changes.numberPos = /*Dive_6*/ ctx[6];
     			divetablerow5.$set(divetablerow5_changes);
+    			const divetablerow6_changes = {};
+    			if (dirty & /*Dive_7*/ 128) divetablerow6_changes.numberPos = /*Dive_7*/ ctx[7];
+    			divetablerow6.$set(divetablerow6_changes);
+    			const divetablerow7_changes = {};
+    			if (dirty & /*Dive_8*/ 256) divetablerow7_changes.numberPos = /*Dive_8*/ ctx[8];
+    			divetablerow7.$set(divetablerow7_changes);
     			const footer_changes = {};
-    			if (dirty & /*Official_Unofficial*/ 256) footer_changes.official = /*Official_Unofficial*/ ctx[8].toLowerCase();
+    			if (dirty & /*Official_Unofficial*/ 1024) footer_changes.official = /*Official_Unofficial*/ ctx[10].toLowerCase();
     			footer.$set(footer_changes);
 
     			if (dirty & /*print*/ 1) {
@@ -2521,6 +2731,8 @@ var app = (function () {
     			transition_in(divetablerow3.$$.fragment, local);
     			transition_in(divetablerow4.$$.fragment, local);
     			transition_in(divetablerow5.$$.fragment, local);
+    			transition_in(divetablerow6.$$.fragment, local);
+    			transition_in(divetablerow7.$$.fragment, local);
     			transition_in(footer.$$.fragment, local);
     			current = true;
     		},
@@ -2533,6 +2745,8 @@ var app = (function () {
     			transition_out(divetablerow3.$$.fragment, local);
     			transition_out(divetablerow4.$$.fragment, local);
     			transition_out(divetablerow5.$$.fragment, local);
+    			transition_out(divetablerow6.$$.fragment, local);
+    			transition_out(divetablerow7.$$.fragment, local);
     			transition_out(footer.$$.fragment, local);
     			current = false;
     		},
@@ -2546,6 +2760,8 @@ var app = (function () {
     			destroy_component(divetablerow3);
     			destroy_component(divetablerow4);
     			destroy_component(divetablerow5);
+    			destroy_component(divetablerow6);
+    			destroy_component(divetablerow7);
     			destroy_component(footer);
     			mounted = false;
     			dispose();
@@ -2573,6 +2789,8 @@ var app = (function () {
     	let { Dive_4 } = $$props;
     	let { Dive_5 } = $$props;
     	let { Dive_6 } = $$props;
+    	let { Dive_7 } = $$props;
+    	let { Dive_8 } = $$props;
     	let { Name } = $$props;
     	let { Official_Unofficial = "" } = $$props;
     	let { Gender } = $$props;
@@ -2588,6 +2806,8 @@ var app = (function () {
     		"Dive_4",
     		"Dive_5",
     		"Dive_6",
+    		"Dive_7",
+    		"Dive_8",
     		"Name",
     		"Official_Unofficial",
     		"Gender",
@@ -2605,17 +2825,19 @@ var app = (function () {
     	}
 
     	$$self.$$set = $$props => {
-    		if ("Age_Group" in $$props) $$invalidate(11, Age_Group = $$props.Age_Group);
+    		if ("Age_Group" in $$props) $$invalidate(13, Age_Group = $$props.Age_Group);
     		if ("Dive_1" in $$props) $$invalidate(1, Dive_1 = $$props.Dive_1);
     		if ("Dive_2" in $$props) $$invalidate(2, Dive_2 = $$props.Dive_2);
     		if ("Dive_3" in $$props) $$invalidate(3, Dive_3 = $$props.Dive_3);
     		if ("Dive_4" in $$props) $$invalidate(4, Dive_4 = $$props.Dive_4);
     		if ("Dive_5" in $$props) $$invalidate(5, Dive_5 = $$props.Dive_5);
     		if ("Dive_6" in $$props) $$invalidate(6, Dive_6 = $$props.Dive_6);
-    		if ("Name" in $$props) $$invalidate(7, Name = $$props.Name);
-    		if ("Official_Unofficial" in $$props) $$invalidate(8, Official_Unofficial = $$props.Official_Unofficial);
-    		if ("Gender" in $$props) $$invalidate(12, Gender = $$props.Gender);
-    		if ("headerData" in $$props) $$invalidate(9, headerData = $$props.headerData);
+    		if ("Dive_7" in $$props) $$invalidate(7, Dive_7 = $$props.Dive_7);
+    		if ("Dive_8" in $$props) $$invalidate(8, Dive_8 = $$props.Dive_8);
+    		if ("Name" in $$props) $$invalidate(9, Name = $$props.Name);
+    		if ("Official_Unofficial" in $$props) $$invalidate(10, Official_Unofficial = $$props.Official_Unofficial);
+    		if ("Gender" in $$props) $$invalidate(14, Gender = $$props.Gender);
+    		if ("headerData" in $$props) $$invalidate(11, headerData = $$props.headerData);
     		if ("print" in $$props) $$invalidate(0, print = $$props.print);
     	};
 
@@ -2631,6 +2853,8 @@ var app = (function () {
     		Dive_4,
     		Dive_5,
     		Dive_6,
+    		Dive_7,
+    		Dive_8,
     		Name,
     		Official_Unofficial,
     		Gender,
@@ -2640,18 +2864,20 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ("Age_Group" in $$props) $$invalidate(11, Age_Group = $$props.Age_Group);
+    		if ("Age_Group" in $$props) $$invalidate(13, Age_Group = $$props.Age_Group);
     		if ("Dive_1" in $$props) $$invalidate(1, Dive_1 = $$props.Dive_1);
     		if ("Dive_2" in $$props) $$invalidate(2, Dive_2 = $$props.Dive_2);
     		if ("Dive_3" in $$props) $$invalidate(3, Dive_3 = $$props.Dive_3);
     		if ("Dive_4" in $$props) $$invalidate(4, Dive_4 = $$props.Dive_4);
     		if ("Dive_5" in $$props) $$invalidate(5, Dive_5 = $$props.Dive_5);
     		if ("Dive_6" in $$props) $$invalidate(6, Dive_6 = $$props.Dive_6);
-    		if ("Name" in $$props) $$invalidate(7, Name = $$props.Name);
-    		if ("Official_Unofficial" in $$props) $$invalidate(8, Official_Unofficial = $$props.Official_Unofficial);
-    		if ("Gender" in $$props) $$invalidate(12, Gender = $$props.Gender);
-    		if ("headerData" in $$props) $$invalidate(9, headerData = $$props.headerData);
-    		if ("diverData" in $$props) $$invalidate(10, diverData = $$props.diverData);
+    		if ("Dive_7" in $$props) $$invalidate(7, Dive_7 = $$props.Dive_7);
+    		if ("Dive_8" in $$props) $$invalidate(8, Dive_8 = $$props.Dive_8);
+    		if ("Name" in $$props) $$invalidate(9, Name = $$props.Name);
+    		if ("Official_Unofficial" in $$props) $$invalidate(10, Official_Unofficial = $$props.Official_Unofficial);
+    		if ("Gender" in $$props) $$invalidate(14, Gender = $$props.Gender);
+    		if ("headerData" in $$props) $$invalidate(11, headerData = $$props.headerData);
+    		if ("diverData" in $$props) $$invalidate(12, diverData = $$props.diverData);
     		if ("print" in $$props) $$invalidate(0, print = $$props.print);
     	};
 
@@ -2660,9 +2886,9 @@ var app = (function () {
     	}
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*Gender, Age_Group, Name*/ 6272) {
+    		if ($$self.$$.dirty & /*Gender, Age_Group, Name*/ 25088) {
     			if (Gender) {
-    				$$invalidate(10, diverData = {
+    				$$invalidate(12, diverData = {
     					ageGroup: Age_Group,
     					name: Name,
     					isMale: Gender.toLowerCase() === "male" ? true : false
@@ -2679,6 +2905,8 @@ var app = (function () {
     		Dive_4,
     		Dive_5,
     		Dive_6,
+    		Dive_7,
+    		Dive_8,
     		Name,
     		Official_Unofficial,
     		headerData,
@@ -2694,17 +2922,19 @@ var app = (function () {
     		super(options);
 
     		init(this, options, instance$2, create_fragment$2, safe_not_equal, {
-    			Age_Group: 11,
+    			Age_Group: 13,
     			Dive_1: 1,
     			Dive_2: 2,
     			Dive_3: 3,
     			Dive_4: 4,
     			Dive_5: 5,
     			Dive_6: 6,
-    			Name: 7,
-    			Official_Unofficial: 8,
-    			Gender: 12,
-    			headerData: 9,
+    			Dive_7: 7,
+    			Dive_8: 8,
+    			Name: 9,
+    			Official_Unofficial: 10,
+    			Gender: 14,
+    			headerData: 11,
     			print: 0
     		});
 
@@ -2718,7 +2948,7 @@ var app = (function () {
     		const { ctx } = this.$$;
     		const props = options.props || {};
 
-    		if (/*Age_Group*/ ctx[11] === undefined && !("Age_Group" in props)) {
+    		if (/*Age_Group*/ ctx[13] === undefined && !("Age_Group" in props)) {
     			console.warn("<DivingSheet> was created without expected prop 'Age_Group'");
     		}
 
@@ -2746,15 +2976,23 @@ var app = (function () {
     			console.warn("<DivingSheet> was created without expected prop 'Dive_6'");
     		}
 
-    		if (/*Name*/ ctx[7] === undefined && !("Name" in props)) {
+    		if (/*Dive_7*/ ctx[7] === undefined && !("Dive_7" in props)) {
+    			console.warn("<DivingSheet> was created without expected prop 'Dive_7'");
+    		}
+
+    		if (/*Dive_8*/ ctx[8] === undefined && !("Dive_8" in props)) {
+    			console.warn("<DivingSheet> was created without expected prop 'Dive_8'");
+    		}
+
+    		if (/*Name*/ ctx[9] === undefined && !("Name" in props)) {
     			console.warn("<DivingSheet> was created without expected prop 'Name'");
     		}
 
-    		if (/*Gender*/ ctx[12] === undefined && !("Gender" in props)) {
+    		if (/*Gender*/ ctx[14] === undefined && !("Gender" in props)) {
     			console.warn("<DivingSheet> was created without expected prop 'Gender'");
     		}
 
-    		if (/*headerData*/ ctx[9] === undefined && !("headerData" in props)) {
+    		if (/*headerData*/ ctx[11] === undefined && !("headerData" in props)) {
     			console.warn("<DivingSheet> was created without expected prop 'headerData'");
     		}
     	}
@@ -2812,6 +3050,22 @@ var app = (function () {
     	}
 
     	set Dive_6(value) {
+    		throw new Error("<DivingSheet>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get Dive_7() {
+    		throw new Error("<DivingSheet>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set Dive_7(value) {
+    		throw new Error("<DivingSheet>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get Dive_8() {
+    		throw new Error("<DivingSheet>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set Dive_8(value) {
     		throw new Error("<DivingSheet>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
 
@@ -3151,7 +3405,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (155:0) {:else}
+    // (108:0) {:else}
     function create_else_block(ctx) {
     	let each_1_anchor;
     	let current;
@@ -3240,14 +3494,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(155:0) {:else}",
+    		source: "(108:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (153:0) {#if data == undefined}
+    // (106:0) {#if data == undefined}
     function create_if_block(ctx) {
     	let divingsheet;
     	let current;
@@ -3288,14 +3542,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(153:0) {#if data == undefined}",
+    		source: "(106:0) {#if data == undefined}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (157:2) {#if row.Age_Group !== ''}
+    // (110:4) {#if row.Age_Group !== ""}
     function create_if_block_1(ctx) {
     	let divingsheet;
     	let current;
@@ -3351,14 +3605,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(157:2) {#if row.Age_Group !== ''}",
+    		source: "(110:4) {#if row.Age_Group !== \\\"\\\"}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (156:1) {#each data as row}
+    // (109:2) {#each data as row}
     function create_each_block(ctx) {
     	let if_block_anchor;
     	let current;
@@ -3417,7 +3671,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(156:1) {#each data as row}",
+    		source: "(109:2) {#each data as row}",
     		ctx
     	});
 
@@ -3543,52 +3797,52 @@ var app = (function () {
     			t21 = space();
     			if_block.c();
     			if_block_anchor = empty();
-    			add_location(span0, file, 105, 3, 1932);
+    			add_location(span0, file, 56, 6, 1158);
     			attr_dev(input0, "type", "text");
-    			add_location(input0, file, 106, 3, 1956);
-    			attr_dev(div0, "class", "input-group svelte-4z3wjq");
-    			add_location(div0, file, 104, 2, 1902);
-    			add_location(span1, file, 110, 3, 2045);
+    			add_location(input0, file, 57, 6, 1185);
+    			attr_dev(div0, "class", "input-group svelte-1d75249");
+    			add_location(div0, file, 55, 4, 1125);
+    			add_location(span1, file, 61, 6, 1281);
     			attr_dev(input1, "type", "text");
-    			add_location(input1, file, 111, 3, 2069);
-    			attr_dev(div1, "class", "input-group svelte-4z3wjq");
-    			add_location(div1, file, 109, 2, 2015);
-    			add_location(span2, file, 115, 3, 2154);
+    			add_location(input1, file, 62, 6, 1308);
+    			attr_dev(div1, "class", "input-group svelte-1d75249");
+    			add_location(div1, file, 60, 4, 1248);
+    			add_location(span2, file, 66, 6, 1400);
     			attr_dev(input2, "type", "text");
-    			add_location(input2, file, 116, 3, 2182);
-    			attr_dev(div2, "class", "input-group svelte-4z3wjq");
-    			add_location(div2, file, 114, 2, 2124);
-    			add_location(span3, file, 120, 3, 2267);
+    			add_location(input2, file, 67, 6, 1431);
+    			attr_dev(div2, "class", "input-group svelte-1d75249");
+    			add_location(div2, file, 65, 4, 1367);
+    			add_location(span3, file, 71, 6, 1523);
     			attr_dev(input3, "type", "date");
-    			add_location(input3, file, 121, 3, 2291);
-    			attr_dev(div3, "class", "input-group svelte-4z3wjq");
-    			add_location(div3, file, 119, 2, 2237);
-    			add_location(span4, file, 125, 3, 2376);
+    			add_location(input3, file, 72, 6, 1550);
+    			attr_dev(div3, "class", "input-group svelte-1d75249");
+    			add_location(div3, file, 70, 4, 1490);
+    			add_location(span4, file, 76, 6, 1642);
     			attr_dev(input4, "type", "file");
-    			add_location(input4, file, 126, 3, 2400);
-    			attr_dev(div4, "class", "input-group svelte-4z3wjq");
-    			add_location(div4, file, 124, 2, 2346);
+    			add_location(input4, file, 77, 6, 1669);
+    			attr_dev(div4, "class", "input-group svelte-1d75249");
+    			add_location(div4, file, 75, 4, 1609);
     			attr_dev(input5, "type", "button");
     			input5.value = "Select All";
-    			add_location(input5, file, 130, 3, 2489);
+    			add_location(input5, file, 81, 6, 1765);
     			attr_dev(input6, "type", "button");
     			input6.value = "Deselect All";
-    			add_location(input6, file, 134, 3, 2587);
-    			attr_dev(div5, "class", "input-group svelte-4z3wjq");
-    			add_location(div5, file, 129, 2, 2459);
+    			add_location(input6, file, 86, 6, 1885);
+    			attr_dev(div5, "class", "input-group svelte-1d75249");
+    			add_location(div5, file, 80, 4, 1732);
     			attr_dev(div6, "class", "form-group");
-    			add_location(div6, file, 103, 1, 1874);
-    			attr_dev(div7, "class", "scroll-top svelte-4z3wjq");
-    			add_location(div7, file, 144, 2, 2747);
+    			add_location(div6, file, 54, 2, 1095);
+    			attr_dev(div7, "class", "scroll-top svelte-1d75249");
+    			add_location(div7, file, 97, 4, 2071);
     			attr_dev(a, "href", "#top");
-    			attr_dev(a, "class", "svelte-4z3wjq");
-    			add_location(a, file, 143, 1, 2728);
-    			add_location(br0, file, 147, 1, 2785);
-    			add_location(hr, file, 148, 1, 2794);
-    			add_location(br1, file, 149, 1, 2803);
+    			attr_dev(a, "class", "svelte-1d75249");
+    			add_location(a, file, 96, 2, 2050);
+    			add_location(br0, file, 100, 2, 2111);
+    			add_location(hr, file, 101, 2, 2121);
+    			add_location(br1, file, 102, 2, 2131);
     			attr_dev(div8, "id", "top");
     			attr_dev(div8, "class", "hidePrint");
-    			add_location(div8, file, 102, 0, 1839);
+    			add_location(div8, file, 53, 0, 1059);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3757,6 +4011,8 @@ var app = (function () {
     			Dive_4: "5132D",
     			Dive_5: "302C",
     			Dive_6: "402C",
+    			Dive_7: "402C",
+    			Dive_8: "402C",
     			Gender: "male",
     			Name: "Ben Lubas",
     			Official_Unofficial: "Unofficial"
