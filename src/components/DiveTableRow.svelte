@@ -5,16 +5,30 @@
   export let numberPos;
 
   let numbers;
+  let numbersDisp; 
   let pos;
-  let twister;
 
-  $: if (numberPos !== undefined) {
-    numbers = numberPos.substring(0, numberPos.length - 1);
+  if (numberPos !== undefined) {
+    numbersDisp = numberPos.substring(0, numberPos.length - 1);
     pos = numberPos.charAt(numberPos.length - 1).toUpperCase();
-
-    twister = numbers[0] === "5";
-    if (twister) numbers = numbers.substring(1);
   }
+
+  const reset = () => {
+    numbersDisp = numberPos.substring(0, numberPos.length - 1);
+    pos = numberPos.charAt(numberPos.length - 1).toUpperCase();
+    dd = (numbersDisp + pos) === '' ? "" : ddTable[(numbersDisp + pos)]; 
+  }
+
+  $: numbersDisp = numberPos.substring(0, numberPos.length - 1);
+  $: pos = numberPos.charAt(numberPos.length - 1).toUpperCase();
+
+  $: pos = pos.toUpperCase(); 
+
+  $: dd = (numbersDisp + pos) === '' ? "" : ddTable[(numbersDisp + pos)]; 
+  $: twister = numbersDisp[0] === "5"; 
+  $: numbers = twister ? numbersDisp.substring(1) : numbersDisp;
+
+
 </script>
 
 <style>
@@ -77,6 +91,10 @@
     text-align: center;
   }
 
+  #number {
+    cursor: pointer; 
+  }
+
   #netTotal {
     width: 7%;
   }
@@ -98,11 +116,11 @@
 
 <tbody class="table-row">
   <tr>
-    <td id="number" rowspan="3">{row}</td>
-    <td id="diveNumbers" class="tg-0lax answer" rowspan="3">
+    <td title="Reset Dive" on:click={reset} id="number" rowspan="3">{row}</td>
+    <td contenteditable bind:innerHTML={numbersDisp} id="diveNumbers" class="tg-0lax answer" rowspan="3">
       {(twister ? '5' : '') + numbers}
     </td>
-    <td id="pos" class="tg-0lax answer" rowspan="3">{pos}</td>
+    <td contenteditable bind:innerHTML={pos} id="pos" class="tg-0lax answer" rowspan="3">{pos}</td>
     <td id="description" rowspan="3" class="tg-0lax">
       <table class="innerTable table">
         <tr>
@@ -114,14 +132,19 @@
           <td class:circle={numbers[0] === '4'}>INW</td>
         </tr>
         <tr>
-          <td class:circle={numbers[2] === '1'} colspan="2">DIVE</td>
+          <td class:circle={!twister && numbers[2] === '1' || numbers[1] === '1' } colspan="2">DIVE</td>
           <td class="answer" colspan="2">
-            {numbers[2] >= 2 ? `${Math.floor(parseInt(numbers[2]) / 2)} 
-              ${parseInt(numbers[2]) % 2 === 1 ? '1/2' : ''} S.S.` : ''}
+            {#if twister}
+              {numbers[1] >= 2 ? `${Math.floor(parseInt(numbers[1]) / 2)} 
+                ${parseInt(numbers[1]) % 2 === 1 ? '1/2' : ''} S.S.` : ''}
+            {:else}
+              {numbers[2] >= 2 ? `${Math.floor(parseInt(numbers[2]) / 2)} 
+                ${parseInt(numbers[2]) % 2 === 1 ? '1/2' : ''} S.S.` : ''}
+            {/if}
           </td>
           <td class="answer" colspan="2">
-            {twister ? `${Math.floor(parseInt(numbers[1]) / 2) !== 0 ? Math.floor(parseInt(numbers[1]) / 2) : ''} 
-              ${parseInt(numbers[1]) % 2 === 1 ? '1/2' : ''} TWIST` : ''}
+            {twister ? `${Math.floor(parseInt(numbers[2]) / 2) !== 0 ? Math.floor(parseInt(numbers[2]) / 2) : ''} 
+              ${parseInt(numbers[2]) % 2 === 1 ? '1/2' : ''} TWIST` : ''}
           </td>
         </tr>
         <tr>
@@ -133,8 +156,8 @@
         </tr>
       </table>
     </td>
-    <td id="dd" class="tg-0lax" rowspan="3">
-      {numberPos !== '' ? ddTable[numberPos] : ''}
+    <td contenteditable bind:innerHTML={dd} id="dd" class="tg-0lax" rowspan="3">
+      {dd}
     </td>
     <td id="award1" class="tg-0lax" rowspan="3" />
     <td id="award2" class="tg-0lax" rowspan="3" />

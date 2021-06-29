@@ -21,7 +21,7 @@
 			Dive_1: "100A",
 			Dive_2: "102B",
 			Dive_3: "204B",
-			Dive_4: "5111A",
+			Dive_4: "5132D",
 			Dive_5: "302C",
 			Dive_6: "402C",
 			Gender: "male",
@@ -38,19 +38,16 @@
 		Papa.parse(this.files[0], {
 			header: true,
 			complete: function (res, file) {
+				console.log(res.data); 
 				data = res.data;
+
+				console.log(data); 
 			},
 		});
 	}
 
 	let selectAll = true;
 
-	// This is going to come from a table.
-	let diverData = {
-		isMale: true,
-		name: "Ben Lubas",
-		ageGroup: "18-22",
-	};
 </script>
 
 <style>
@@ -154,7 +151,7 @@
 </div>
 
 {#if data == undefined}
-	<DivingSheet {headerData} {diverData} />
+	<DivingSheet {headerData} />
 {:else}
 	{#each data as row}
 		{#if row.Age_Group !== ''}

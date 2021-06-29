@@ -1,12 +1,12 @@
 <script>
-  export let isOfficial; 
+  export let official = ""; 
 </script>
 
 <br>
 
 <div class='container'>
-  <div class:x={isOfficial}>____ Official Diver (Points Awarded)</div>
-  <div class:x={!isOfficial}>____ UnOfficial Diver (No Points Awarded)</div>
+  <div class:x={official.toLowerCase() === "official"}>____ Official Diver (Points Awarded)</div>
+  <div class:x={official.toLowerCase() === "unofficial"}>____ UnOfficial Diver (No Points Awarded)</div>
 </div>
 
 <style>

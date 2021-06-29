@@ -63,7 +63,7 @@
 
 
 	</table>
-	<Footer isOfficial={Official_Unofficial.toLowerCase() === "official"} />
+	<Footer official={Official_Unofficial.toLowerCase()} />
 
 	<div style="page-break-after: always"></div>
 </div>
