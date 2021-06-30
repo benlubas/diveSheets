@@ -52,20 +52,21 @@
     <td id="description" rowspan="3" class="tg-0lax">
       <table class="innerTable table">
         <tr>
-          <td>S</td>
-          <td>R</td>
-          <td class:circle={numbers[0] === "1"}>FWD</td>
-          <td class:circle={numbers[0] === "2"}>BAC</td>
-          <td class:circle={numbers[0] === "3"}>REV</td>
-          <td class:circle={numbers[0] === "4"}>INW</td>
+          <td class="center-txt">S</td>
+          <td class="center-txt">R</td>
+          <td class="center-txt" class:circle={numbers[0] === "1"}>FWD</td>
+          <td class="center-txt" class:circle={numbers[0] === "2"}>BAC</td>
+          <td class="center-txt" class:circle={numbers[0] === "3"}>REV</td>
+          <td class="center-txt" class:circle={numbers[0] === "4"}>INW</td>
         </tr>
         <tr>
           <td
+            class="center-txt"
             class:circle={(!twister && numbers[2] === "1") ||
               numbers[1] === "1"}
             colspan="2">DIVE</td
           >
-          <td class="answer" colspan="2">
+          <td class="center-txt answer" colspan="2">
             {#if twister}
               {numbers[1] >= 2
                 ? `${Math.floor(parseInt(numbers[1]) / 2)} 
@@ -78,7 +79,7 @@
                 : ""}
             {/if}
           </td>
-          <td class="answer" colspan="2">
+          <td class="center-txt answer" colspan="2">
             {twister
               ? `${
                   Math.floor(parseInt(numbers[2]) / 2) !== 0
@@ -90,11 +91,11 @@
           </td>
         </tr>
         <tr>
-          <td class="col20" colspan="2">FLY</td>
-          <td class="col20" class:circle={pos === "C"}>TUC</td>
-          <td class="col20" class:circle={pos === "B"}>PIKE</td>
-          <td class="col20" class:circle={pos === "A"}>LAY</td>
-          <td class="col20" class:circle={pos === "D"}>FREE</td>
+          <td class="col20 center-txt" colspan="2">FLY</td>
+          <td class="col20 center-txt" class:circle={pos === "C"}>TUC</td>
+          <td class="col20 center-txt" class:circle={pos === "B"}>PIKE</td>
+          <td class="col20 center-txt" class:circle={pos === "A"}>LAY</td>
+          <td class="col20 center-txt" class:circle={pos === "D"}>FREE</td>
         </tr>
       </table>
     </td>
