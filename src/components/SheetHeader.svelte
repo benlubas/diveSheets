@@ -1,10 +1,11 @@
 <script>
-  export let name = "missing name";
-  export let ageGroup;
+  export let name = "";
+  export let ageGroup = "";
   export let gender;
   export let club;
   export let meetName;
   export let site;
+  export let updateName = () => {};
 
   export let date;
   $: dateObj = new Date(date);
@@ -12,29 +13,62 @@
   $: dateString = dateObj
     .toLocaleString()
     .substring(0, dateObj.toLocaleString().indexOf(","));
+
+  let nameDiv;
+  let ageGroupDiv;
+
+  const focusName = () => {
+    nameDiv.focus();
+  };
+  const focusAgeGroup = () => {
+    ageGroupDiv.focus();
+  };
 </script>
 
 <table class="diverInfoTable tg">
   <thead>
     <tr>
-      <th class="tg-0pky col40">
+      <th on:click={focusName} class="tg-0pky col40">
         <div>
           <div class="title">Name</div>
-          <div class="answer">{name}</div>
+          <div
+            contenteditable
+            bind:this={nameDiv}
+            bind:innerHTML={name}
+            on:input={updateName(name)}
+            class="answer"
+          >
+            {name}
+          </div>
         </div>
       </th>
-      <th class="tg-0pky col40">
+      <th on:click={focusAgeGroup} class="tg-0pky col40">
         <div>
           <div class="title">Age Group</div>
-          <div class="answer">{ageGroup}</div>
+          <div
+            bind:this={ageGroupDiv}
+            contenteditable
+            bind:innerHTML={ageGroup}
+            class="answer"
+          >
+            {ageGroup}
+          </div>
         </div>
       </th>
-      <th class:circle={gender === "male"} class="tg-0pky col10">
+      <th
+        on:click={() => (gender = "male")}
+        class:circle={gender === "male"}
+        class="tg-0pky col10 pointer"
+      >
         <div>
           <div class="answer">Male</div>
         </div>
       </th>
-      <th class:circle={gender === "female"} class="tg-0lax">
+      <th
+        on:click={() => (gender = "female")}
+        class:circle={gender === "female"}
+        class="tg-0lax pointer"
+      >
         <div>
           <div class="answer">Female</div>
         </div>

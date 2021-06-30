@@ -24,6 +24,8 @@
 
   let diverData;
 
+  export let updateName;
+
   $: if (Gender) {
     diverData = {
       ageGroup: Age_Group,
@@ -45,7 +47,7 @@
     <div class="title" contenteditable bind:innerHTML={formTitle} />
   </div>
 
-  <SheetHeader {...headerData} {...diverData} />
+  <SheetHeader {updateName} {...headerData} {...diverData} />
 
   <br />
 

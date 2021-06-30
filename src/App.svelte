@@ -15,6 +15,21 @@
     date,
   };
 
+  let blankSheet = {
+    Age_Group: " ",
+    Dive_1: "",
+    Dive_2: "",
+    Dive_3: "",
+    Dive_4: "",
+    Dive_5: "",
+    Dive_6: "",
+    Dive_7: "",
+    Dive_8: "",
+    Gender: "un selected",
+    Name: "",
+    Official_Unofficial: "",
+  };
+
   let data = [
     {
       Age_Group: "19-22",
@@ -31,6 +46,14 @@
       Official_Unofficial: "Unofficial",
     },
   ];
+
+  let changeName = (name, index) => {
+    data[index].Name = name;
+  };
+  let remove = (index) => {
+    data.splice(index, 1);
+    data = data;
+  };
 
   $: names = data.map((val) => val.Name).filter((val) => val !== undefined);
 
@@ -81,6 +104,14 @@
     <div class="input-group">
       <input
         type="button"
+        value="Add New Sheet"
+        on:click={() => (data = [{ ...blankSheet }, ...data])}
+      />
+    </div>
+
+    <div class="input-group">
+      <input
+        type="button"
         on:click={() => (selectAll = true)}
         value="Select All"
       />
@@ -92,11 +123,7 @@
     </div>
   </div>
 
-  <Menu {names} />
-
-  <a href="#top">
-    <div class="scroll-top" />
-  </a>
+  <Menu {names} {remove} />
 
   <br />
   <hr />
@@ -106,9 +133,14 @@
 {#if data == undefined}
   <DivingSheet {headerData} />
 {:else}
-  {#each data as row}
+  {#each data as row, i (row)}
     {#if row.Age_Group !== ""}
-      <DivingSheet print={selectAll} {headerData} {...row} />
+      <DivingSheet
+        updateName={(nName) => changeName(nName, i)}
+        print={selectAll}
+        {headerData}
+        {...row}
+      />
     {/if}
   {/each}
 {/if}
@@ -118,47 +150,11 @@
     display: flex;
     justify-content: space-between;
     max-width: 300px;
-    margin: 3px;
+    margin: 5px;
     font-size: 1.5rem;
   }
 
-  .scroll-top {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    background: var(--background);
-    color: var(--primary);
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid var(--primary);
-    z-index: 22;
-  }
-
-  .scroll-top::after,
-  .scroll-top::before {
-    content: "";
-    width: 10px;
-    height: 4px;
-    background: var(--primary);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .scroll-top::after {
-    transform-origin: right;
-    transform: translateX(-3px) rotateZ(45deg);
-  }
-
-  .scroll-top::before {
-    transform-origin: left;
-    transform: translateX(-4px) rotateZ(-45deg);
-  }
-  a {
-    color: inherit;
-    text-decoration: none;
+  input[type="button"] {
+    padding: 10px;
   }
 </style>

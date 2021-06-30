@@ -17,6 +17,9 @@ body {
   margin: auto;
 }
 
+.pointer {
+  cursor: pointer;
+}
 .col40 {
   width: 40%;
 }
