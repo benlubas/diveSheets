@@ -9,6 +9,32 @@
   let numbersDisp;
   let pos;
 
+  let scoresDisp = ["", "", "", "", ""];
+
+  $: scores = scoresDisp.map((x) => parseFloat(x) || "");
+
+  const change = () => {
+    scoresDisp = scoresDisp;
+  };
+
+  let finalScore = "";
+
+  $: netTotal = (
+    scores.reduce((total, val) => parseFloat(val) + total, 0) -
+    Math.max(...scores) -
+    Math.min(...scores)
+  ).toFixed(2);
+
+  $: if (netTotal !== "NaN") {
+    let n = netTotal * dd;
+    let s = n.toFixed(2);
+    s = s.split(".").join("");
+    s = s.length < 5 ? "0" + s : s;
+    finalScore = s;
+  } else {
+    finalScore = "";
+  }
+
   if (numberPos !== undefined) {
     numbersDisp = numberPos.substring(0, numberPos.length - 1);
     pos = numberPos.charAt(numberPos.length - 1).toUpperCase();
@@ -102,27 +128,35 @@
     <td contenteditable bind:innerHTML={dd} id="dd" class="tg-0lax" rowspan="3">
       {dd}
     </td>
-    <td id="award1" class="tg-0lax" rowspan="3" />
-    <td id="award2" class="tg-0lax" rowspan="3" />
-    <td id="award3" class="tg-0lax" rowspan="3" />
-    <td id="award4" class="tg-0lax" rowspan="3" />
-    <td id="award5" class="tg-0lax" rowspan="3" />
+
+    {#each scoresDisp as score, i}
+      <td
+        class="tg-0lax fix"
+        contenteditable
+        bind:innerHTML={scoresDisp[i]}
+        rowspan="3"
+      >
+        {score}
+      </td>
+    {/each}
     <td id="award6" class="tg-0lax" rowspan="3" />
     <td id="award7" class="tg-0lax" rowspan="3" />
-    <td id="netTotal" class="tg-0lax" rowspan="3" />
+    <td id="netTotal" class="tg-0lax" rowspan="3">
+      {netTotal == "NaN" ? "" : netTotal}
+    </td>
 
     {#if firstRow}
       <td colspan="5" class="table-housing">
         <table class="scoresTable table">
           <tr>
-            <td id="score" colspan="5">Scores</td>
+            <td id="score" colspan="5">Score</td>
           </tr>
           <tr>
-            <td id="score1" class="tg-0lax invis">1 </td>
-            <td id="score2" class="tg-0lax invis">1 </td>
-            <td id="score3" class="tg-0lax invis">1 </td>
-            <td id="score4" class="tg-0lax invis">1 </td>
-            <td id="score5" class="tg-0lax invis">1 </td>
+            <td id="score1" class="tg-0lax invis">1</td>
+            <td id="score2" class="tg-0lax invis">1</td>
+            <td id="score3" class="tg-0lax invis">1</td>
+            <td id="score4" class="tg-0lax invis">1</td>
+            <td id="score5" class="tg-0lax invis">1</td>
           </tr>
         </table>
       </td>
@@ -167,6 +201,7 @@
     margin: 0px;
     text-align: center;
     font-size: larger;
+    text-transform: uppercase;
   }
   .answer {
     font-size: 13pt;
@@ -246,6 +281,7 @@
 
   #netTotal {
     width: 7%;
+    text-align: center;
   }
 
   .score {
@@ -260,5 +296,10 @@
     background-color: black;
     top: 60%;
     left: 0;
+  }
+
+  .fix {
+    width: 32px;
+    box-sizing: border-box;
   }
 </style>

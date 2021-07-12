@@ -61,7 +61,7 @@
         class="tg-0pky col10 pointer"
       >
         <div>
-          <div class="answer">Male</div>
+          <div class="answer center-txt">Male</div>
         </div>
       </th>
       <th
@@ -70,7 +70,7 @@
         class="tg-0lax pointer"
       >
         <div>
-          <div class="answer">Female</div>
+          <div class="answer center-txt">Female</div>
         </div>
       </th>
     </tr>
